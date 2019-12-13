@@ -5,13 +5,13 @@ import SwiftUI
 struct RootView: View {
     @State private var isLoggedIn: Bool = false
     var body: some View {
-        Group {
+        ZStack {
             if isLoggedIn {
                 Home()
-                    .transition(.slide)
+                    .transition(.scale)
             } else {
                 Login(isLoggedIn: $isLoggedIn)
-                    .transition(.slide)
+                    .transition(.scale)
             }
         }
     }

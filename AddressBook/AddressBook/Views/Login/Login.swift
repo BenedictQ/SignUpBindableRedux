@@ -3,14 +3,31 @@
 import SwiftUI
 
 struct Login: View {
+    @EnvironmentObject var loginState: LoginEnvironment
     @State private var pin = ""
+    @State private var showRegistration = false
     @Binding var isLoggedIn: Bool
 
     var body: some View {
-        ZStack {
-            Color.green
-                .opacity(0.3)
-                .edgesIgnoringSafeArea(.all)
+        Background.login {
+            VStack {
+                SecureField("Enter PIN", text: self.$pin) {
+                    withAnimation(.linear) {
+                        self.isLoggedIn.toggle()
+                    }
+                }
+                .multilineTextAlignment(.center)
+                .font(.title)
+                .padding()
+                Button("Sign up") {
+                    self.showRegistration.toggle()
+                }
+                .padding()
+                .sheet(isPresented: $showRegistration) {
+                    SignUpFirstName()
+                        .environmentObject(self.loginState)
+                }
+            }
             VStack {
                 Logo()
                     .frame(width: 100, height: 100, alignment: .center)
@@ -20,15 +37,6 @@ struct Login: View {
                     .font(.largeTitle)
                     .multilineTextAlignment(.leading)
                 Spacer()
-            }
-            VStack {
-                SecureField("PIN", text: self.$pin) {
-                    withAnimation(.linear) {
-                        self.isLoggedIn.toggle()
-                    }
-                }
-                    .multilineTextAlignment(.center)
-                    .font(.title)
             }
         }
     }
