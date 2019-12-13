@@ -6,19 +6,31 @@ struct Login: View {
     @EnvironmentObject var loginState: LoginEnvironment
     @State private var pin = ""
     @State private var showRegistration = false
-    @Binding var isLoggedIn: Bool
+    @State private var shouldDisplayErrorMessage = false
 
     var body: some View {
         Background.login {
             VStack {
                 SecureField("Enter PIN", text: self.$pin) {
-                    withAnimation(.linear) {
-                        self.isLoggedIn.toggle()
+                    if self.loginState.recordedPIN != "" && self.pin == self.loginState.recordedPIN {
+                        withAnimation(.linear) {
+                            self.loginState.isLoggedIn.toggle()
+                        }
+                    } else {
+                        self.shouldDisplayErrorMessage = true
                     }
                 }
                 .multilineTextAlignment(.center)
                 .font(.title)
                 .padding()
+
+                if shouldDisplayErrorMessage {
+                    Text("Sorry that's no the right pin. Please try again, or sign up if you haven't already.")
+                        .padding()
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.red)
+                }
+
                 Button("Sign up") {
                     self.showRegistration.toggle()
                 }
@@ -46,9 +58,9 @@ struct Login_Previews: PreviewProvider {
     @State static var isLoggedIn = true
     static var previews: some View {
         Group {
-            Login(isLoggedIn: $isLoggedIn)
+            Login()
                 .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
-            Login(isLoggedIn: $isLoggedIn)
+            Login()
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
         }
     }

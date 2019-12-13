@@ -7,5 +7,6 @@ final class LoginEnvironment: ObservableObject {
     @Published var lastName: String = ""
     @Published var email: String = ""
     @Published var phone: String = ""
-    @Published var PIN: String = ""
+    @Published var recordedPIN: String = ""
+    @Published var isLoggedIn: Bool = true
 }

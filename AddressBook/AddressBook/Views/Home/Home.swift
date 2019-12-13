@@ -4,8 +4,7 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        ZStack {
-            Color(.red)
+        Background.generate(withColor: .blue) {
             Text("Home")
         }
     }

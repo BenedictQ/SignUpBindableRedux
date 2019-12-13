@@ -3,14 +3,14 @@
 import SwiftUI
 
 struct RootView: View {
-    @State private var isLoggedIn: Bool = false
+    @EnvironmentObject var loginState: LoginEnvironment
     var body: some View {
         ZStack {
-            if isLoggedIn {
+            if loginState.isLoggedIn {
                 Home()
                     .transition(.scale)
             } else {
-                Login(isLoggedIn: $isLoggedIn)
+                Login()
                     .transition(.scale)
             }
         }

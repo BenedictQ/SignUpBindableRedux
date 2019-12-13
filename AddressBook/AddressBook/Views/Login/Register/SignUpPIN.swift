@@ -7,9 +7,11 @@ struct SignUpPIN: View {
     @State private var shouldNavigateToNextScreen: Bool? = false
     var body: some View {
         Background.login {
-            Text("Enter PIN")
-            SecureField("Enter PIN", text: $loginState.PIN)
-            .multilineTextAlignment(.center)
+            VStack {
+                Text("Enter PIN")
+                SecureField("Enter PIN", text: $loginState.recordedPIN)
+                .multilineTextAlignment(.center)
+            }
         }
     }
 }
