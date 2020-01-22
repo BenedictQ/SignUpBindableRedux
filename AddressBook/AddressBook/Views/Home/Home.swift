@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct Home: View {
-    @EnvironmentObject var store: Store
+    @EnvironmentObject var store: RootStore
     var body: some View {
         Background.generate(withColor: .blue) {
             ZStack {
@@ -11,7 +11,7 @@ struct Home: View {
                     HStack {
                         Button(action: {
                             withAnimation {
-                                self.store.isLoggedIn = false
+                                self.store.state.isLoggedIn = false
                             }
                         }) {
                             Image(systemName: "arrow.left.square")
@@ -22,7 +22,16 @@ struct Home: View {
                     }
                     Spacer()
                 }
-                Text("Home")
+                VStack {
+                    LabelledText(label: "First Name",
+                                 value: $store.state.signUpState.firstName)
+
+                    LabelledText(label: "Last Name",
+                                 value: $store.state.signUpState.lastName)
+
+                    LabelledText(label: "Email",
+                                 value: $store.state.signUpState.email)
+                }
             }
         }
     }
@@ -31,5 +40,6 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+        .environmentObject(RootStore())
     }
 }

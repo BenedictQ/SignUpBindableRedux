@@ -20,6 +20,6 @@ struct SignUpLastName: View {
 struct SignUpLastName_Previews: PreviewProvider {
     static var previews: some View {
         SignUpLastName()
-        .environmentObject(Store())
+        .environmentObject(RootStore())
     }
 }

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BindableSwiftUIRedux",
+        "repositoryURL": "https://github.com/BenedictQ/Bindable-SwiftUI-Redux.git",
+        "state": {
+          "branch": "master",
+          "revision": "e37660fdc93342359c0ae6ad1d87613f53927031",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

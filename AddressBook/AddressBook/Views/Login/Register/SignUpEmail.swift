@@ -20,6 +20,6 @@ struct SignUpEmail: View {
 struct SignUpEmail_Previews: PreviewProvider {
     static var previews: some View {
         SignUpEmail()
-        .environmentObject(Store())
+        .environmentObject(RootStore())
     }
 }

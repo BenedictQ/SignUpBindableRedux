@@ -20,6 +20,6 @@ struct SignUpPhoneNumber: View {
 struct SignUpPhoneNumber_Previews: PreviewProvider {
     static var previews: some View {
         SignUpEmail()
-        .environmentObject(Store())
+        .environmentObject(RootStore())
     }
 }

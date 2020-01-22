@@ -19,6 +19,6 @@ struct SignUpPIN: View {
 struct SignUpPIN_Previews: PreviewProvider {
     static var previews: some View {
         SignUpPIN()
-        .environmentObject(Store())
+        .environmentObject(RootStore())
     }
 }

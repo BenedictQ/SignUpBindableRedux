@@ -1,21 +1,19 @@
-//
-
 import SwiftUI
 
 struct RootView: View {
-    @EnvironmentObject var store: Store
+    @EnvironmentObject var store: RootStore
     var body: some View {
         ZStack {
-            if store.isLoggedIn {
+            if store.state.isLoggedIn {
                 Home()
                     .transition(.scale)
             } else {
-                Login(isLoggedIn: $store.isLoggedIn)
-                    .environmentObject(store.loginState)
+                Login(isLoggedIn: $store.state.isLoggedIn)
+                    .environmentObject(store.state.loginState)
                     .transition(.scale)
-                    .sheet(isPresented: $store.loginState.showRegistrationFlow) {
+                    .sheet(isPresented: $store.state.loginState.showRegistrationFlow) {
                         SignUpFirstName()
-                            .environmentObject(self.store.signUpState)
+                            .environmentObject(self.store.state.signUpState)
                     }
             }
         }
