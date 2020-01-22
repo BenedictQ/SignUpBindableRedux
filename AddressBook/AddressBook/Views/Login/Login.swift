@@ -1,11 +1,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct Login: View {
-    @EnvironmentObject var loginState: LoginEnvironment
+    @Binding var isLoggedIn: Bool
+    @EnvironmentObject var loginState: LoginState
     @State private var pin = ""
-    @State private var showRegistration = false
     @State private var shouldDisplayErrorMessage = false
 
     var body: some View {
@@ -14,7 +15,7 @@ struct Login: View {
                 SecureField("Enter PIN", text: self.$pin) {
                     if self.loginState.recordedPIN != "" && self.pin == self.loginState.recordedPIN {
                         withAnimation(.linear) {
-                            self.loginState.isLoggedIn.toggle()
+                            self.isLoggedIn.toggle()
                         }
                     } else {
                         self.shouldDisplayErrorMessage = true
@@ -32,13 +33,9 @@ struct Login: View {
                 }
 
                 Button("Sign up") {
-                    self.showRegistration.toggle()
+                    self.loginState.showRegistrationFlow = true
                 }
                 .padding()
-                .sheet(isPresented: $showRegistration) {
-                    SignUpFirstName()
-                        .environmentObject(self.loginState)
-                }
             }
             VStack {
                 Logo()
@@ -58,9 +55,9 @@ struct Login_Previews: PreviewProvider {
     @State static var isLoggedIn = true
     static var previews: some View {
         Group {
-            Login()
+            Login(isLoggedIn: Login_Previews.$isLoggedIn)
                 .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
-            Login()
+            Login(isLoggedIn: Login_Previews.$isLoggedIn)
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
         }
     }

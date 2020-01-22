@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct SignUpFirstName: View {
-    @EnvironmentObject var loginState: LoginEnvironment
+    @EnvironmentObject var loginState: SignUpState
     @State private var shouldNavigateToNextScreen: Bool? = false
     var body: some View {
         NavigationView {
@@ -22,6 +22,6 @@ struct SignUpFirstName: View {
 struct SignUpFirstName_Previews: PreviewProvider {
     static var previews: some View {
         SignUpFirstName()
-        .environmentObject(LoginEnvironment())
+        .environmentObject(SignUpState())
     }
 }

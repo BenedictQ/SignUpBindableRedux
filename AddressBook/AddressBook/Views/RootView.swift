@@ -3,15 +3,20 @@
 import SwiftUI
 
 struct RootView: View {
-    @EnvironmentObject var loginState: LoginEnvironment
+    @EnvironmentObject var store: Store
     var body: some View {
         ZStack {
-            if loginState.isLoggedIn {
+            if store.isLoggedIn {
                 Home()
                     .transition(.scale)
             } else {
-                Login()
+                Login(isLoggedIn: $store.isLoggedIn)
+                    .environmentObject(store.loginState)
                     .transition(.scale)
+                    .sheet(isPresented: $store.loginState.showRegistrationFlow) {
+                        SignUpFirstName()
+                            .environmentObject(self.store.signUpState)
+                    }
             }
         }
     }

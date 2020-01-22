@@ -21,7 +21,7 @@
 		9D5130F623A3B64900FEFA33 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F523A3B64900FEFA33 /* RootView.swift */; };
 		9D5130FD23A3D85000FEFA33 /* SignUpFirstName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130FC23A3D85000FEFA33 /* SignUpFirstName.swift */; };
 		9D5130FF23A3DAAA00FEFA33 /* GreenBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130FE23A3DAAA00FEFA33 /* GreenBackground.swift */; };
-		9D51310423A3DD2800FEFA33 /* LoginEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310323A3DD2800FEFA33 /* LoginEnvironment.swift */; };
+		9D51310423A3DD2800FEFA33 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310323A3DD2800FEFA33 /* Store.swift */; };
 		9D51310623A3DEDE00FEFA33 /* SignUpLastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310523A3DEDE00FEFA33 /* SignUpLastName.swift */; };
 		9D51310823A3E3D800FEFA33 /* NavigatingTextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310723A3E3D800FEFA33 /* NavigatingTextEntry.swift */; };
 		9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310923A3E59600FEFA33 /* SignUpEmail.swift */; };
@@ -67,7 +67,7 @@
 		9D5130F523A3B64900FEFA33 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		9D5130FC23A3D85000FEFA33 /* SignUpFirstName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstName.swift; sourceTree = "<group>"; };
 		9D5130FE23A3DAAA00FEFA33 /* GreenBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBackground.swift; sourceTree = "<group>"; };
-		9D51310323A3DD2800FEFA33 /* LoginEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEnvironment.swift; sourceTree = "<group>"; };
+		9D51310323A3DD2800FEFA33 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		9D51310523A3DEDE00FEFA33 /* SignUpLastName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLastName.swift; sourceTree = "<group>"; };
 		9D51310723A3E3D800FEFA33 /* NavigatingTextEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatingTextEntry.swift; sourceTree = "<group>"; };
 		9D51310923A3E59600FEFA33 /* SignUpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmail.swift; sourceTree = "<group>"; };
@@ -207,7 +207,7 @@
 		9D51310023A3DD0D00FEFA33 /* EnvironmentObjects */ = {
 			isa = PBXGroup;
 			children = (
-				9D51310323A3DD2800FEFA33 /* LoginEnvironment.swift */,
+				9D51310323A3DD2800FEFA33 /* Store.swift */,
 			);
 			path = EnvironmentObjects;
 			sourceTree = "<group>";
@@ -354,7 +354,7 @@
 				9D5130F423A3AA9000FEFA33 /* Home.swift in Sources */,
 				9D51310823A3E3D800FEFA33 /* NavigatingTextEntry.swift in Sources */,
 				9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */,
-				9D51310423A3DD2800FEFA33 /* LoginEnvironment.swift in Sources */,
+				9D51310423A3DD2800FEFA33 /* Store.swift in Sources */,
 				9D5130FF23A3DAAA00FEFA33 /* GreenBackground.swift in Sources */,
 				9D51310623A3DEDE00FEFA33 /* SignUpLastName.swift in Sources */,
 				9D5130FD23A3D85000FEFA33 /* SignUpFirstName.swift in Sources */,

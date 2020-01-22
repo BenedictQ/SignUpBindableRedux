@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct SignUpPhoneNumber: View {
-    @EnvironmentObject var loginState: LoginEnvironment
+    @EnvironmentObject var loginState: SignUpState
     @State private var shouldNavigateToNextScreen: Bool? = false
     var body: some View {
         Background.login {
@@ -20,6 +20,6 @@ struct SignUpPhoneNumber: View {
 struct SignUpPhoneNumber_Previews: PreviewProvider {
     static var previews: some View {
         SignUpEmail()
-        .environmentObject(LoginEnvironment())
+        .environmentObject(Store())
     }
 }
