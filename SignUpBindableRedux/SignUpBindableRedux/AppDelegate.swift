@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  AddressBook
+//  SignUpBindableRedux
 //
 //  Created by Benedict Quinn on 06/12/2019.
 //  Copyright © 2019 Benedict Quinn. All rights reserved.
@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "AddressBook")
+        let container = NSPersistentContainer(name: "SignUpBindableRedux")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

@@ -23,12 +23,12 @@
 		9D4A5EEE23D9A19B006504AB /* UpdateRecordedPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EED23D9A19B006504AB /* UpdateRecordedPIN.swift */; };
 		9D5130AE239AB9B700FEFA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */; };
 		9D5130B0239AB9B700FEFA33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */; };
-		9D5130B3239AB9B700FEFA33 /* AddressBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130B1239AB9B700FEFA33 /* AddressBook.xcdatamodeld */; };
+		9D5130B3239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130B1239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld */; };
 		9D5130B7239AB9B900FEFA33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5130B6239AB9B900FEFA33 /* Assets.xcassets */; };
 		9D5130BA239AB9B900FEFA33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D5130B9239AB9B900FEFA33 /* Preview Assets.xcassets */; };
 		9D5130BD239AB9B900FEFA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5130BB239AB9B900FEFA33 /* LaunchScreen.storyboard */; };
-		9D5130C8239AB9B900FEFA33 /* AddressBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130C7239AB9B900FEFA33 /* AddressBookTests.swift */; };
-		9D5130D3239AB9B900FEFA33 /* AddressBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130D2239AB9B900FEFA33 /* AddressBookUITests.swift */; };
+		9D5130C8239AB9B900FEFA33 /* SignUpBindableReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130C7239AB9B900FEFA33 /* SignUpBindableReduxTests.swift */; };
+		9D5130D3239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130D2239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift */; };
 		9D5130EB239ABD4100FEFA33 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130EA239ABD4100FEFA33 /* Login.swift */; };
 		9D5130F123A3997200FEFA33 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F023A3997200FEFA33 /* Logo.swift */; };
 		9D5130F423A3AA9000FEFA33 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F323A3AA9000FEFA33 /* Home.swift */; };
@@ -74,7 +74,7 @@
 		9D4A5EE823D999E4006504AB /* SignUpUpdatePhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdatePhoneNumber.swift; sourceTree = "<group>"; };
 		9D4A5EEA23D99A01006504AB /* SignUpUpdatePIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdatePIN.swift; sourceTree = "<group>"; };
 		9D4A5EED23D9A19B006504AB /* UpdateRecordedPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRecordedPIN.swift; sourceTree = "<group>"; };
-		9D5130AA239AB9B700FEFA33 /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5130AA239AB9B700FEFA33 /* SignUpBindableRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpBindableRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9D5130B2239AB9B700FEFA33 /* AddressBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddressBook.xcdatamodel; sourceTree = "<group>"; };
@@ -82,11 +82,11 @@
 		9D5130B9239AB9B900FEFA33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D5130BC239AB9B900FEFA33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D5130BE239AB9B900FEFA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D5130C3239AB9B900FEFA33 /* AddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D5130C7239AB9B900FEFA33 /* AddressBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookTests.swift; sourceTree = "<group>"; };
+		9D5130C3239AB9B900FEFA33 /* SignUpBindableReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpBindableReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5130C7239AB9B900FEFA33 /* SignUpBindableReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBindableReduxTests.swift; sourceTree = "<group>"; };
 		9D5130C9239AB9B900FEFA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D5130CE239AB9B900FEFA33 /* AddressBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D5130D2239AB9B900FEFA33 /* AddressBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookUITests.swift; sourceTree = "<group>"; };
+		9D5130CE239AB9B900FEFA33 /* SignUpBindableReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpBindableReduxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5130D2239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBindableReduxUITests.swift; sourceTree = "<group>"; };
 		9D5130D4239AB9B900FEFA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D5130EA239ABD4100FEFA33 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9D5130F023A3997200FEFA33 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
@@ -172,9 +172,9 @@
 		9D5130A1239AB9B700FEFA33 = {
 			isa = PBXGroup;
 			children = (
-				9D5130AC239AB9B700FEFA33 /* AddressBook */,
-				9D5130C6239AB9B900FEFA33 /* AddressBookTests */,
-				9D5130D1239AB9B900FEFA33 /* AddressBookUITests */,
+				9D5130AC239AB9B700FEFA33 /* SignUpBindableRedux */,
+				9D5130C6239AB9B900FEFA33 /* SignUpBindableReduxTests */,
+				9D5130D1239AB9B900FEFA33 /* SignUpBindableReduxUITests */,
 				9D5130AB239AB9B700FEFA33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,14 +182,14 @@
 		9D5130AB239AB9B700FEFA33 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D5130AA239AB9B700FEFA33 /* AddressBook.app */,
-				9D5130C3239AB9B900FEFA33 /* AddressBookTests.xctest */,
-				9D5130CE239AB9B900FEFA33 /* AddressBookUITests.xctest */,
+				9D5130AA239AB9B700FEFA33 /* SignUpBindableRedux.app */,
+				9D5130C3239AB9B900FEFA33 /* SignUpBindableReduxTests.xctest */,
+				9D5130CE239AB9B900FEFA33 /* SignUpBindableReduxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D5130AC239AB9B700FEFA33 /* AddressBook */ = {
+		9D5130AC239AB9B700FEFA33 /* SignUpBindableRedux */ = {
 			isa = PBXGroup;
 			children = (
 				9D51310023A3DD0D00FEFA33 /* Redux */,
@@ -199,10 +199,10 @@
 				9D5130B6239AB9B900FEFA33 /* Assets.xcassets */,
 				9D5130BB239AB9B900FEFA33 /* LaunchScreen.storyboard */,
 				9D5130BE239AB9B900FEFA33 /* Info.plist */,
-				9D5130B1239AB9B700FEFA33 /* AddressBook.xcdatamodeld */,
+				9D5130B1239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld */,
 				9D5130B8239AB9B900FEFA33 /* Preview Content */,
 			);
-			path = AddressBook;
+			path = SignUpBindableRedux;
 			sourceTree = "<group>";
 		};
 		9D5130B8239AB9B900FEFA33 /* Preview Content */ = {
@@ -213,22 +213,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		9D5130C6239AB9B900FEFA33 /* AddressBookTests */ = {
+		9D5130C6239AB9B900FEFA33 /* SignUpBindableReduxTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D5130C7239AB9B900FEFA33 /* AddressBookTests.swift */,
+				9D5130C7239AB9B900FEFA33 /* SignUpBindableReduxTests.swift */,
 				9D5130C9239AB9B900FEFA33 /* Info.plist */,
 			);
-			path = AddressBookTests;
+			path = SignUpBindableReduxTests;
 			sourceTree = "<group>";
 		};
-		9D5130D1239AB9B900FEFA33 /* AddressBookUITests */ = {
+		9D5130D1239AB9B900FEFA33 /* SignUpBindableReduxUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9D5130D2239AB9B900FEFA33 /* AddressBookUITests.swift */,
+				9D5130D2239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift */,
 				9D5130D4239AB9B900FEFA33 /* Info.plist */,
 			);
-			path = AddressBookUITests;
+			path = SignUpBindableReduxUITests;
 			sourceTree = "<group>";
 		};
 		9D5130EC239ABD4900FEFA33 /* Views */ = {
@@ -288,9 +288,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D5130A9239AB9B700FEFA33 /* AddressBook */ = {
+		9D5130A9239AB9B700FEFA33 /* SignUpBindableRedux */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D5130D7239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "AddressBook" */;
+			buildConfigurationList = 9D5130D7239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "SignUpBindableRedux" */;
 			buildPhases = (
 				9D5130A6239AB9B700FEFA33 /* Sources */,
 				9D5130A7239AB9B700FEFA33 /* Frameworks */,
@@ -300,17 +300,17 @@
 			);
 			dependencies = (
 			);
-			name = AddressBook;
+			name = SignUpBindableRedux;
 			packageProductDependencies = (
 				9D4A5ECB23D8A3DA006504AB /* BindableSwiftUIRedux */,
 			);
 			productName = AddressBook;
-			productReference = 9D5130AA239AB9B700FEFA33 /* AddressBook.app */;
+			productReference = 9D5130AA239AB9B700FEFA33 /* SignUpBindableRedux.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9D5130C2239AB9B900FEFA33 /* AddressBookTests */ = {
+		9D5130C2239AB9B900FEFA33 /* SignUpBindableReduxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D5130DA239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "AddressBookTests" */;
+			buildConfigurationList = 9D5130DA239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "SignUpBindableReduxTests" */;
 			buildPhases = (
 				9D5130BF239AB9B900FEFA33 /* Sources */,
 				9D5130C0239AB9B900FEFA33 /* Frameworks */,
@@ -321,14 +321,14 @@
 			dependencies = (
 				9D5130C5239AB9B900FEFA33 /* PBXTargetDependency */,
 			);
-			name = AddressBookTests;
+			name = SignUpBindableReduxTests;
 			productName = AddressBookTests;
-			productReference = 9D5130C3239AB9B900FEFA33 /* AddressBookTests.xctest */;
+			productReference = 9D5130C3239AB9B900FEFA33 /* SignUpBindableReduxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9D5130CD239AB9B900FEFA33 /* AddressBookUITests */ = {
+		9D5130CD239AB9B900FEFA33 /* SignUpBindableReduxUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D5130DD239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "AddressBookUITests" */;
+			buildConfigurationList = 9D5130DD239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "SignUpBindableReduxUITests" */;
 			buildPhases = (
 				9D5130CA239AB9B900FEFA33 /* Sources */,
 				9D5130CB239AB9B900FEFA33 /* Frameworks */,
@@ -339,9 +339,9 @@
 			dependencies = (
 				9D5130D0239AB9B900FEFA33 /* PBXTargetDependency */,
 			);
-			name = AddressBookUITests;
+			name = SignUpBindableReduxUITests;
 			productName = AddressBookUITests;
-			productReference = 9D5130CE239AB9B900FEFA33 /* AddressBookUITests.xctest */;
+			productReference = 9D5130CE239AB9B900FEFA33 /* SignUpBindableReduxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -367,7 +367,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D5130A5239AB9B700FEFA33 /* Build configuration list for PBXProject "AddressBook" */;
+			buildConfigurationList = 9D5130A5239AB9B700FEFA33 /* Build configuration list for PBXProject "SignUpBindableRedux" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -383,9 +383,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D5130A9239AB9B700FEFA33 /* AddressBook */,
-				9D5130C2239AB9B900FEFA33 /* AddressBookTests */,
-				9D5130CD239AB9B900FEFA33 /* AddressBookUITests */,
+				9D5130A9239AB9B700FEFA33 /* SignUpBindableRedux */,
+				9D5130C2239AB9B900FEFA33 /* SignUpBindableReduxTests */,
+				9D5130CD239AB9B900FEFA33 /* SignUpBindableReduxUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -424,7 +424,7 @@
 			files = (
 				9D5130F623A3B64900FEFA33 /* RootView.swift in Sources */,
 				9D4A5ED323D8AB92006504AB /* SignUpState.swift in Sources */,
-				9D5130B3239AB9B700FEFA33 /* AddressBook.xcdatamodeld in Sources */,
+				9D5130B3239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld in Sources */,
 				9D4A5EE523D999B7006504AB /* SignUpUpdateLastName.swift in Sources */,
 				9D5130EB239ABD4100FEFA33 /* Login.swift in Sources */,
 				9D51310E23A3E6DB00FEFA33 /* SignUpPIN.swift in Sources */,
@@ -457,7 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5130C8239AB9B900FEFA33 /* AddressBookTests.swift in Sources */,
+				9D5130C8239AB9B900FEFA33 /* SignUpBindableReduxTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,7 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5130D3239AB9B900FEFA33 /* AddressBookUITests.swift in Sources */,
+				9D5130D3239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,12 +474,12 @@
 /* Begin PBXTargetDependency section */
 		9D5130C5239AB9B900FEFA33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D5130A9239AB9B700FEFA33 /* AddressBook */;
+			target = 9D5130A9239AB9B700FEFA33 /* SignUpBindableRedux */;
 			targetProxy = 9D5130C4239AB9B900FEFA33 /* PBXContainerItemProxy */;
 		};
 		9D5130D0239AB9B900FEFA33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D5130A9239AB9B700FEFA33 /* AddressBook */;
+			target = 9D5130A9239AB9B700FEFA33 /* SignUpBindableRedux */;
 			targetProxy = 9D5130CF239AB9B900FEFA33 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -615,15 +615,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AddressBook/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SignUpBindableRedux/Preview Content\"";
 				DEVELOPMENT_TEAM = 9369VUGV7T;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AddressBook/Info.plist;
+				INFOPLIST_FILE = SignUpBindableRedux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BQ.AddressBook;
+				PRODUCT_BUNDLE_IDENTIFIER = BQ.SignUpBindableRedux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,15 +635,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"AddressBook/Preview Content\"";
 				DEVELOPMENT_TEAM = 9369VUGV7T;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = AddressBook/Info.plist;
+				INFOPLIST_FILE = SignUpBindableRedux/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BQ.AddressBook;
+				PRODUCT_BUNDLE_IDENTIFIER = BQ.SignUpBindableRedux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,18 +656,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9369VUGV7T;
-				INFOPLIST_FILE = AddressBookTests/Info.plist;
+				INFOPLIST_FILE = SignUpBindableReduxTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BQ.AddressBookTests;
+				PRODUCT_BUNDLE_IDENTIFIER = BQ.SignUpBindableReduxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressBook.app/AddressBook";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUpBindableRedux.app/SignUpBindableRedux";
 			};
 			name = Debug;
 		};
@@ -679,18 +678,18 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9369VUGV7T;
-				INFOPLIST_FILE = AddressBookTests/Info.plist;
+				INFOPLIST_FILE = SignUpBindableReduxTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BQ.AddressBookTests;
+				PRODUCT_BUNDLE_IDENTIFIER = BQ.SignUpBindableReduxTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressBook.app/AddressBook";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignUpBindableRedux.app/SignUpBindableRedux";
 			};
 			name = Release;
 		};
@@ -700,17 +699,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9369VUGV7T;
-				INFOPLIST_FILE = AddressBookUITests/Info.plist;
+				INFOPLIST_FILE = SignUpBindableReduxUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BQ.AddressBookUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = BQ.SignUpBindableRedux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AddressBook;
+				TEST_TARGET_NAME = SignUpBindableRedux;
 			};
 			name = Debug;
 		};
@@ -720,24 +719,24 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9369VUGV7T;
-				INFOPLIST_FILE = AddressBookUITests/Info.plist;
+				INFOPLIST_FILE = SignUpBindableReduxUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BQ.AddressBookUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = BQ.SignUpBindableRedux;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AddressBook;
+				TEST_TARGET_NAME = SignUpBindableRedux;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D5130A5239AB9B700FEFA33 /* Build configuration list for PBXProject "AddressBook" */ = {
+		9D5130A5239AB9B700FEFA33 /* Build configuration list for PBXProject "SignUpBindableRedux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D5130D5239AB9B900FEFA33 /* Debug */,
@@ -746,7 +745,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D5130D7239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "AddressBook" */ = {
+		9D5130D7239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "SignUpBindableRedux" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D5130D8239AB9B900FEFA33 /* Debug */,
@@ -755,7 +754,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D5130DA239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "AddressBookTests" */ = {
+		9D5130DA239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "SignUpBindableReduxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D5130DB239AB9B900FEFA33 /* Debug */,
@@ -764,7 +763,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D5130DD239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "AddressBookUITests" */ = {
+		9D5130DD239AB9B900FEFA33 /* Build configuration list for PBXNativeTarget "SignUpBindableReduxUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D5130DE239AB9B900FEFA33 /* Debug */,
@@ -795,13 +794,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		9D5130B1239AB9B700FEFA33 /* AddressBook.xcdatamodeld */ = {
+		9D5130B1239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				9D5130B2239AB9B700FEFA33 /* AddressBook.xcdatamodel */,
 			);
 			currentVersion = 9D5130B2239AB9B700FEFA33 /* AddressBook.xcdatamodel */;
-			path = AddressBook.xcdatamodeld;
+			path = SignUpBindableRedux.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

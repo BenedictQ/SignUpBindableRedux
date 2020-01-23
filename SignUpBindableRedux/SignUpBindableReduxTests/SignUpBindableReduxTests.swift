@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AddressBook
+@testable import SignUpBindableRedux
 
 class AddressBookTests: XCTestCase {
 

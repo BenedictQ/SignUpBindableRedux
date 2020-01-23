@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  AddressBook
+//  SignUpBindableRedux
 //
 //  Created by Benedict Quinn on 06/12/2019.
 //  Copyright © 2019 Benedict Quinn. All rights reserved.
