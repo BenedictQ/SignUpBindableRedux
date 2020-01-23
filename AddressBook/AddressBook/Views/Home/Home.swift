@@ -11,7 +11,8 @@ struct Home: View {
                     HStack {
                         Button(action: {
                             withAnimation {
-                                self.store.state.isLoggedIn = false
+                                let update = UpdateIsLoggedIn(isLoggedIn: false)
+                                self.store.dispatch(update)
                             }
                         }) {
                             Image(systemName: "arrow.left.square")

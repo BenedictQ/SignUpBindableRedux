@@ -3,14 +3,14 @@
 import SwiftUI
 
 struct SignUpLastName: View {
-    @EnvironmentObject var loginState: SignUpState
+    @EnvironmentObject var store: RootStore
     @State private var shouldNavigateToNextScreen: Bool? = false
     var body: some View {
         Background.login {
             NavigatingTextEntry(
                 placeholder: "Enter Last Name",
                 destination: SignUpEmail(),
-                text: $loginState.lastName,
+                text: $store.state.signUpState.lastName,
                 shouldNavigateToNextScreen: $shouldNavigateToNextScreen
             )
         }

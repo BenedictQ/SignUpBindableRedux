@@ -11,8 +11,16 @@
 		9D4A5ECE23D8AAE0006504AB /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */; };
 		9D4A5ED123D8AB8A006504AB /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED023D8AB8A006504AB /* RootState.swift */; };
 		9D4A5ED323D8AB92006504AB /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED223D8AB92006504AB /* SignUpState.swift */; };
-		9D4A5ED523D8ABBA006504AB /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED423D8ABBA006504AB /* LoginState.swift */; };
 		9D4A5ED723D8AD72006504AB /* LabelledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED623D8AD72006504AB /* LabelledText.swift */; };
+		9D4A5EDA23D8B772006504AB /* UpdateIsLoggedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED923D8B772006504AB /* UpdateIsLoggedIn.swift */; };
+		9D4A5EDC23D8B902006504AB /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EDB23D8B902006504AB /* LoginState.swift */; };
+		9D4A5EDE23D8B984006504AB /* UpdateShowRegistrationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EDD23D8B984006504AB /* UpdateShowRegistrationFlow.swift */; };
+		9D4A5EE223D997D3006504AB /* SignUpUpdateFirstName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EE123D997D3006504AB /* SignUpUpdateFirstName.swift */; };
+		9D4A5EE523D999B7006504AB /* SignUpUpdateLastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EE423D999B7006504AB /* SignUpUpdateLastName.swift */; };
+		9D4A5EE723D999C9006504AB /* SignUpUpdateEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EE623D999C9006504AB /* SignUpUpdateEmail.swift */; };
+		9D4A5EE923D999E4006504AB /* SignUpUpdatePhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EE823D999E4006504AB /* SignUpUpdatePhoneNumber.swift */; };
+		9D4A5EEB23D99A01006504AB /* SignUpUpdatePIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EEA23D99A01006504AB /* SignUpUpdatePIN.swift */; };
+		9D4A5EEE23D9A19B006504AB /* UpdateRecordedPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EED23D9A19B006504AB /* UpdateRecordedPIN.swift */; };
 		9D5130AE239AB9B700FEFA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */; };
 		9D5130B0239AB9B700FEFA33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */; };
 		9D5130B3239AB9B700FEFA33 /* AddressBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130B1239AB9B700FEFA33 /* AddressBook.xcdatamodeld */; };
@@ -56,8 +64,16 @@
 		9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
 		9D4A5ED023D8AB8A006504AB /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
 		9D4A5ED223D8AB92006504AB /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
-		9D4A5ED423D8ABBA006504AB /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
 		9D4A5ED623D8AD72006504AB /* LabelledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledText.swift; sourceTree = "<group>"; };
+		9D4A5ED923D8B772006504AB /* UpdateIsLoggedIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateIsLoggedIn.swift; sourceTree = "<group>"; };
+		9D4A5EDB23D8B902006504AB /* LoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		9D4A5EDD23D8B984006504AB /* UpdateShowRegistrationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShowRegistrationFlow.swift; sourceTree = "<group>"; };
+		9D4A5EE123D997D3006504AB /* SignUpUpdateFirstName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdateFirstName.swift; sourceTree = "<group>"; };
+		9D4A5EE423D999B7006504AB /* SignUpUpdateLastName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdateLastName.swift; sourceTree = "<group>"; };
+		9D4A5EE623D999C9006504AB /* SignUpUpdateEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdateEmail.swift; sourceTree = "<group>"; };
+		9D4A5EE823D999E4006504AB /* SignUpUpdatePhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdatePhoneNumber.swift; sourceTree = "<group>"; };
+		9D4A5EEA23D99A01006504AB /* SignUpUpdatePIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdatePIN.swift; sourceTree = "<group>"; };
+		9D4A5EED23D9A19B006504AB /* UpdateRecordedPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRecordedPIN.swift; sourceTree = "<group>"; };
 		9D5130AA239AB9B700FEFA33 /* AddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,9 +133,40 @@
 			children = (
 				9D4A5ED023D8AB8A006504AB /* RootState.swift */,
 				9D4A5ED223D8AB92006504AB /* SignUpState.swift */,
-				9D4A5ED423D8ABBA006504AB /* LoginState.swift */,
+				9D4A5EDB23D8B902006504AB /* LoginState.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		9D4A5ED823D8B738006504AB /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				9D4A5EEC23D9A18B006504AB /* Login */,
+				9D4A5EE323D999A0006504AB /* SignUp */,
+				9D4A5ED923D8B772006504AB /* UpdateIsLoggedIn.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		9D4A5EE323D999A0006504AB /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				9D4A5EE123D997D3006504AB /* SignUpUpdateFirstName.swift */,
+				9D4A5EE423D999B7006504AB /* SignUpUpdateLastName.swift */,
+				9D4A5EE623D999C9006504AB /* SignUpUpdateEmail.swift */,
+				9D4A5EE823D999E4006504AB /* SignUpUpdatePhoneNumber.swift */,
+				9D4A5EEA23D99A01006504AB /* SignUpUpdatePIN.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		9D4A5EEC23D9A18B006504AB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D4A5EDD23D8B984006504AB /* UpdateShowRegistrationFlow.swift */,
+				9D4A5EED23D9A19B006504AB /* UpdateRecordedPIN.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		9D5130A1239AB9B700FEFA33 = {
@@ -145,7 +192,7 @@
 		9D5130AC239AB9B700FEFA33 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				9D51310023A3DD0D00FEFA33 /* State */,
+				9D51310023A3DD0D00FEFA33 /* Redux */,
 				9D5130EC239ABD4900FEFA33 /* Views */,
 				9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */,
 				9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */,
@@ -227,14 +274,15 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		9D51310023A3DD0D00FEFA33 /* State */ = {
+		9D51310023A3DD0D00FEFA33 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				9D4A5ED823D8B738006504AB /* Actions */,
 				9D4A5ECF23D8AB80006504AB /* State */,
 				9D51310323A3DD2800FEFA33 /* RootStore.swift */,
 				9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */,
 			);
-			path = State;
+			path = Redux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,23 +425,31 @@
 				9D5130F623A3B64900FEFA33 /* RootView.swift in Sources */,
 				9D4A5ED323D8AB92006504AB /* SignUpState.swift in Sources */,
 				9D5130B3239AB9B700FEFA33 /* AddressBook.xcdatamodeld in Sources */,
+				9D4A5EE523D999B7006504AB /* SignUpUpdateLastName.swift in Sources */,
 				9D5130EB239ABD4100FEFA33 /* Login.swift in Sources */,
 				9D51310E23A3E6DB00FEFA33 /* SignUpPIN.swift in Sources */,
 				9D5130AE239AB9B700FEFA33 /* AppDelegate.swift in Sources */,
 				9D5130F123A3997200FEFA33 /* Logo.swift in Sources */,
+				9D4A5EDC23D8B902006504AB /* LoginState.swift in Sources */,
+				9D4A5EDA23D8B772006504AB /* UpdateIsLoggedIn.swift in Sources */,
 				9D4A5ED723D8AD72006504AB /* LabelledText.swift in Sources */,
 				9D51310C23A3E6B200FEFA33 /* SignUpPhoneNumber.swift in Sources */,
 				9D4A5ED123D8AB8A006504AB /* RootState.swift in Sources */,
 				9D5130B0239AB9B700FEFA33 /* SceneDelegate.swift in Sources */,
+				9D4A5EE923D999E4006504AB /* SignUpUpdatePhoneNumber.swift in Sources */,
 				9D5130F423A3AA9000FEFA33 /* Home.swift in Sources */,
 				9D51310823A3E3D800FEFA33 /* NavigatingTextEntry.swift in Sources */,
 				9D4A5ECE23D8AAE0006504AB /* RootReducer.swift in Sources */,
 				9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */,
+				9D4A5EE223D997D3006504AB /* SignUpUpdateFirstName.swift in Sources */,
+				9D4A5EEE23D9A19B006504AB /* UpdateRecordedPIN.swift in Sources */,
 				9D51310423A3DD2800FEFA33 /* RootStore.swift in Sources */,
+				9D4A5EEB23D99A01006504AB /* SignUpUpdatePIN.swift in Sources */,
 				9D5130FF23A3DAAA00FEFA33 /* Background.swift in Sources */,
+				9D4A5EE723D999C9006504AB /* SignUpUpdateEmail.swift in Sources */,
 				9D51310623A3DEDE00FEFA33 /* SignUpLastName.swift in Sources */,
+				9D4A5EDE23D8B984006504AB /* UpdateShowRegistrationFlow.swift in Sources */,
 				9D5130FD23A3D85000FEFA33 /* SignUpFirstName.swift in Sources */,
-				9D4A5ED523D8ABBA006504AB /* LoginState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

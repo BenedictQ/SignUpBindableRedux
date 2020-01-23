@@ -4,8 +4,7 @@ import SwiftUI
 import Combine
 
 struct Login: View {
-    @Binding var isLoggedIn: Bool
-    @EnvironmentObject var loginState: LoginState
+    @EnvironmentObject var store: RootStore
     @State private var pin = ""
     @State private var shouldDisplayErrorMessage = false
 
@@ -13,9 +12,10 @@ struct Login: View {
         Background.login {
             VStack {
                 SecureField("Enter PIN", text: self.$pin) {
-                    if self.loginState.recordedPIN != "" && self.pin == self.loginState.recordedPIN {
+                    if self.store.state.loginState.recordedPIN != "" && self.pin == self.store.state.loginState.recordedPIN {
                         withAnimation(.linear) {
-                            self.isLoggedIn.toggle()
+                            let update = UpdateIsLoggedIn(isLoggedIn: true)
+                            self.store.dispatch(update)
                         }
                     } else {
                         self.shouldDisplayErrorMessage = true
@@ -33,7 +33,8 @@ struct Login: View {
                 }
 
                 Button("Sign up") {
-                    self.loginState.showRegistrationFlow = true
+                    let update = UpdateShowRegistrationFlow(shouldShowRegistrationFlow: true)
+                    self.store.dispatch(update)
                 }
                 .padding()
             }
@@ -52,13 +53,14 @@ struct Login: View {
 }
 
 struct Login_Previews: PreviewProvider {
-    @State static var isLoggedIn = true
     static var previews: some View {
         Group {
-            Login(isLoggedIn: Login_Previews.$isLoggedIn)
+            Login()
                 .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
-            Login(isLoggedIn: Login_Previews.$isLoggedIn)
+                .environmentObject(RootStore().initialize())
+            Login()
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+                .environmentObject(RootStore().initialize())
         }
     }
 }

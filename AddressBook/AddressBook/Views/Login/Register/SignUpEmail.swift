@@ -3,14 +3,14 @@
 import SwiftUI
 
 struct SignUpEmail: View {
-    @EnvironmentObject var loginState: SignUpState
+    @EnvironmentObject var store: RootStore
     @State private var shouldNavigateToNextScreen: Bool? = false
     var body: some View {
         Background.login {
             NavigatingTextEntry(
                 placeholder: "Enter Email Address",
                 destination: SignUpPhoneNumber(),
-                text: $loginState.email,
+                text: $store.state.signUpState.email,
                 shouldNavigateToNextScreen: $shouldNavigateToNextScreen
             )
         }
