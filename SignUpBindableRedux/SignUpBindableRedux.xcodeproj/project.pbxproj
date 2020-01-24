@@ -41,6 +41,24 @@
 		9D51310C23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310B23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift */; };
 		9D51310E23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310D23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift */; };
 		9DB9B7DC23DB09D800670555 /* LabelledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7DB23DB09D800670555 /* LabelledText.swift */; };
+		9DB9B7F223DB157200670555 /* MultipleStoreRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7E123DB157200670555 /* MultipleStoreRootView.swift */; };
+		9DB9B7F323DB157200670555 /* MultipleStoreHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7E223DB157200670555 /* MultipleStoreHome.swift */; };
+		9DB9B7F423DB157200670555 /* MultipleStoreLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7E423DB157200670555 /* MultipleStoreLogin.swift */; };
+		9DB9B7F523DB157200670555 /* MultipleStoreSignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7E623DB157200670555 /* MultipleStoreSignUpEmail.swift */; };
+		9DB9B7F623DB157200670555 /* MultipleStoreSignUpPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7E723DB157200670555 /* MultipleStoreSignUpPhoneNumber.swift */; };
+		9DB9B7F723DB157200670555 /* MultipleStoreSignUpFirstName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7E823DB157200670555 /* MultipleStoreSignUpFirstName.swift */; };
+		9DB9B7F823DB157200670555 /* MultipleStoreSignUpLastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7E923DB157200670555 /* MultipleStoreSignUpLastName.swift */; };
+		9DB9B7F923DB157200670555 /* MultipleStoreSignUpPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7EA23DB157200670555 /* MultipleStoreSignUpPIN.swift */; };
+		9DB9B7FA23DB157200670555 /* MultipleRootStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7EC23DB157200670555 /* MultipleRootStore.swift */; };
+		9DB9B7FB23DB157200670555 /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7EE23DB157200670555 /* SignUpState.swift */; };
+		9DB9B7FC23DB157200670555 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7EF23DB157200670555 /* LoginState.swift */; };
+		9DB9B7FD23DB157200670555 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7F023DB157200670555 /* RootState.swift */; };
+		9DB9B7FE23DB157200670555 /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7F123DB157200670555 /* RootReducer.swift */; };
+		9DB9B80023DB159700670555 /* SignUpStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7FF23DB159700670555 /* SignUpStore.swift */; };
+		9DB9B80323DB160100670555 /* SignUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B80223DB160100670555 /* SignUpReducer.swift */; };
+		9DB9B80723DB175300670555 /* ReduxSubStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B80623DB175300670555 /* ReduxSubStore.swift */; };
+		9DB9B80923DB17D200670555 /* ReduxRootStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B80823DB17D200670555 /* ReduxRootStore.swift */; };
+		9DB9B80B23DB182100670555 /* ReduxSubState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B80A23DB182100670555 /* ReduxSubState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +118,24 @@
 		9D51310B23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpPhoneNumber.swift; sourceTree = "<group>"; };
 		9D51310D23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpPIN.swift; sourceTree = "<group>"; };
 		9DB9B7DB23DB09D800670555 /* LabelledText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelledText.swift; sourceTree = "<group>"; };
+		9DB9B7E123DB157200670555 /* MultipleStoreRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreRootView.swift; sourceTree = "<group>"; };
+		9DB9B7E223DB157200670555 /* MultipleStoreHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreHome.swift; sourceTree = "<group>"; };
+		9DB9B7E423DB157200670555 /* MultipleStoreLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreLogin.swift; sourceTree = "<group>"; };
+		9DB9B7E623DB157200670555 /* MultipleStoreSignUpEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreSignUpEmail.swift; sourceTree = "<group>"; };
+		9DB9B7E723DB157200670555 /* MultipleStoreSignUpPhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreSignUpPhoneNumber.swift; sourceTree = "<group>"; };
+		9DB9B7E823DB157200670555 /* MultipleStoreSignUpFirstName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreSignUpFirstName.swift; sourceTree = "<group>"; };
+		9DB9B7E923DB157200670555 /* MultipleStoreSignUpLastName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreSignUpLastName.swift; sourceTree = "<group>"; };
+		9DB9B7EA23DB157200670555 /* MultipleStoreSignUpPIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleStoreSignUpPIN.swift; sourceTree = "<group>"; };
+		9DB9B7EC23DB157200670555 /* MultipleRootStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleRootStore.swift; sourceTree = "<group>"; };
+		9DB9B7EE23DB157200670555 /* SignUpState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
+		9DB9B7EF23DB157200670555 /* LoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		9DB9B7F023DB157200670555 /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		9DB9B7F123DB157200670555 /* RootReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
+		9DB9B7FF23DB159700670555 /* SignUpStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStore.swift; sourceTree = "<group>"; };
+		9DB9B80223DB160100670555 /* SignUpReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpReducer.swift; sourceTree = "<group>"; };
+		9DB9B80623DB175300670555 /* ReduxSubStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSubStore.swift; sourceTree = "<group>"; };
+		9DB9B80823DB17D200670555 /* ReduxRootStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxRootStore.swift; sourceTree = "<group>"; };
+		9DB9B80A23DB182100670555 /* ReduxSubState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxSubState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				9DCFB2BF23DB04C3009BF96A /* Shared */,
+				9DB9B7DF23DB157200670555 /* MultipleStoreExample */,
 				9DCFB28223DB0482009BF96A /* SingleStoreExample */,
 				9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */,
 				9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */,
@@ -270,6 +307,95 @@
 				9D4A5ECD23D8AAE0006504AB /* SingleRootReducer.swift */,
 			);
 			path = Redux;
+			sourceTree = "<group>";
+		};
+		9DB9B7DF23DB157200670555 /* MultipleStoreExample */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B7E023DB157200670555 /* Views */,
+				9DB9B7EB23DB157200670555 /* Redux */,
+			);
+			path = MultipleStoreExample;
+			sourceTree = "<group>";
+		};
+		9DB9B7E023DB157200670555 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B7E123DB157200670555 /* MultipleStoreRootView.swift */,
+				9DB9B7E223DB157200670555 /* MultipleStoreHome.swift */,
+				9DB9B7E323DB157200670555 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9DB9B7E323DB157200670555 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B7E423DB157200670555 /* MultipleStoreLogin.swift */,
+				9DB9B7E523DB157200670555 /* Register */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9DB9B7E523DB157200670555 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B7E623DB157200670555 /* MultipleStoreSignUpEmail.swift */,
+				9DB9B7E723DB157200670555 /* MultipleStoreSignUpPhoneNumber.swift */,
+				9DB9B7E823DB157200670555 /* MultipleStoreSignUpFirstName.swift */,
+				9DB9B7E923DB157200670555 /* MultipleStoreSignUpLastName.swift */,
+				9DB9B7EA23DB157200670555 /* MultipleStoreSignUpPIN.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		9DB9B7EB23DB157200670555 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B80523DB173A00670555 /* Protocols */,
+				9DB9B80423DB162C00670555 /* Stores */,
+				9DB9B80123DB15F500670555 /* Reducers */,
+				9DB9B7ED23DB157200670555 /* State */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+		9DB9B7ED23DB157200670555 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B7EE23DB157200670555 /* SignUpState.swift */,
+				9DB9B7EF23DB157200670555 /* LoginState.swift */,
+				9DB9B7F023DB157200670555 /* RootState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		9DB9B80123DB15F500670555 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B80223DB160100670555 /* SignUpReducer.swift */,
+				9DB9B7F123DB157200670555 /* RootReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		9DB9B80423DB162C00670555 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B7FF23DB159700670555 /* SignUpStore.swift */,
+				9DB9B7EC23DB157200670555 /* MultipleRootStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		9DB9B80523DB173A00670555 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B80623DB175300670555 /* ReduxSubStore.swift */,
+				9DB9B80823DB17D200670555 /* ReduxRootStore.swift */,
+				9DB9B80A23DB182100670555 /* ReduxSubState.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		9DCFB28223DB0482009BF96A /* SingleStoreExample */ = {
@@ -432,32 +558,50 @@
 			files = (
 				9D5130F623A3B64900FEFA33 /* SingleStoreRootView.swift in Sources */,
 				9D4A5ED323D8AB92006504AB /* SingleStoreSignUpState.swift in Sources */,
+				9DB9B7F223DB157200670555 /* MultipleStoreRootView.swift in Sources */,
+				9DB9B7F623DB157200670555 /* MultipleStoreSignUpPhoneNumber.swift in Sources */,
+				9DB9B7FC23DB157200670555 /* LoginState.swift in Sources */,
 				9D5130B3239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld in Sources */,
 				9D4A5EE523D999B7006504AB /* SignUpUpdateLastName.swift in Sources */,
 				9D5130EB239ABD4100FEFA33 /* SingleStoreLogin.swift in Sources */,
 				9D51310E23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift in Sources */,
+				9DB9B7F423DB157200670555 /* MultipleStoreLogin.swift in Sources */,
+				9DB9B7FB23DB157200670555 /* SignUpState.swift in Sources */,
 				9D5130AE239AB9B700FEFA33 /* AppDelegate.swift in Sources */,
 				9D5130F123A3997200FEFA33 /* Logo.swift in Sources */,
+				9DB9B7FE23DB157200670555 /* RootReducer.swift in Sources */,
 				9D4A5EDC23D8B902006504AB /* SingleStoreLoginState.swift in Sources */,
+				9DB9B7F323DB157200670555 /* MultipleStoreHome.swift in Sources */,
+				9DB9B80323DB160100670555 /* SignUpReducer.swift in Sources */,
+				9DB9B7FD23DB157200670555 /* RootState.swift in Sources */,
 				9D4A5EDA23D8B772006504AB /* UpdateIsLoggedIn.swift in Sources */,
 				9D51310C23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift in Sources */,
 				9D4A5ED123D8AB8A006504AB /* SingleStoreRootState.swift in Sources */,
 				9D5130B0239AB9B700FEFA33 /* SceneDelegate.swift in Sources */,
+				9DB9B7F523DB157200670555 /* MultipleStoreSignUpEmail.swift in Sources */,
 				9D4A5EE923D999E4006504AB /* SignUpUpdatePhoneNumber.swift in Sources */,
 				9D5130F423A3AA9000FEFA33 /* SingleStoreHome.swift in Sources */,
+				9DB9B7FA23DB157200670555 /* MultipleRootStore.swift in Sources */,
 				9D51310823A3E3D800FEFA33 /* NavigatingTextEntry.swift in Sources */,
 				9D4A5ECE23D8AAE0006504AB /* SingleRootReducer.swift in Sources */,
+				9DB9B80923DB17D200670555 /* ReduxRootStore.swift in Sources */,
 				9D51310A23A3E59600FEFA33 /* SingleStoreSignUpEmail.swift in Sources */,
 				9D4A5EE223D997D3006504AB /* SignUpUpdateFirstName.swift in Sources */,
 				9D4A5EEE23D9A19B006504AB /* UpdateRecordedPIN.swift in Sources */,
+				9DB9B7F923DB157200670555 /* MultipleStoreSignUpPIN.swift in Sources */,
 				9D51310423A3DD2800FEFA33 /* SingleRootStore.swift in Sources */,
 				9D4A5EEB23D99A01006504AB /* SignUpUpdatePIN.swift in Sources */,
+				9DB9B80023DB159700670555 /* SignUpStore.swift in Sources */,
 				9D5130FF23A3DAAA00FEFA33 /* Background.swift in Sources */,
 				9D4A5EE723D999C9006504AB /* SignUpUpdateEmail.swift in Sources */,
+				9DB9B7F723DB157200670555 /* MultipleStoreSignUpFirstName.swift in Sources */,
 				9D51310623A3DEDE00FEFA33 /* SingleStoreSignUpLastName.swift in Sources */,
 				9D4A5EDE23D8B984006504AB /* UpdateShowRegistrationFlow.swift in Sources */,
+				9DB9B80723DB175300670555 /* ReduxSubStore.swift in Sources */,
+				9DB9B7F823DB157200670555 /* MultipleStoreSignUpLastName.swift in Sources */,
 				9D5130FD23A3D85000FEFA33 /* SingleStoreSignUpFirstName.swift in Sources */,
 				9DB9B7DC23DB09D800670555 /* LabelledText.swift in Sources */,
+				9DB9B80B23DB182100670555 /* ReduxSubState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
