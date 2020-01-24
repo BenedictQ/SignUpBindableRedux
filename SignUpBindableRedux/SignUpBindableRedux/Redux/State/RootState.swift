@@ -2,21 +2,13 @@ import Foundation
 import BindableSwiftUIRedux
 import Combine
 
-final class RootState: ReduxRootState {
-    @Published var signUpState = SignUpState()
-    @Published var loginState = LoginState()
-    @Published var isLoggedIn: Bool = false
+final class RootState: ReduxState {
+    var signUpState = SignUpState()
+    var loginState = LoginState()
+    var isLoggedIn: Bool = false
 
     func initialize(store: RootStore) {
-        signUpState.initialize(with: store)
-
-        loginState.objectWillChange.receive(subscriber: Subscribers.Sink(receiveCompletion: { _ in }) {
-            self.objectWillChange.send()
-        })
-
-        signUpState.objectWillChange.receive(subscriber: Subscribers.Sink(receiveCompletion: { _ in }) {
-            self.objectWillChange.send()
-        })
+        signUpState.initialize(store: store)
     }
 
     func deepcopy() -> RootState {

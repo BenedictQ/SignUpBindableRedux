@@ -1,7 +1,7 @@
 import BindableSwiftUIRedux
 import Combine
 
-final class SignUpState: ObservableObject {
+final class SignUpState: ReduxState {
     @ReduxBindable<RootStore, String, SignUpUpdateFirstName> var firstName: String = ""
     @ReduxBindable<RootStore, String, SignUpUpdateLastName> var lastName: String = ""
     @ReduxBindable<RootStore, String, SignUpUpdateEmail> var email: String = ""
@@ -9,10 +9,8 @@ final class SignUpState: ObservableObject {
     @ReduxBindable<RootStore, String, SignUpUpdatePIN> var pin: String = ""
 
     private var signUpStateSinkToRecordedPIN: AnyCancellable?
-    private var store: RootStore!
 
-    func initialize(with store: RootStore) {
-        self.store = store
+    func initialize(store: RootStore) {
         _firstName.store = store
         _lastName.store = store
         _email.store = store
