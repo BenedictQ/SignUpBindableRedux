@@ -2,14 +2,14 @@
 
 import SwiftUI
 
-struct SignUpEmail: View {
-    @EnvironmentObject var store: RootStore
+struct SingleStoreSignUpEmail: View {
+    @EnvironmentObject var store: SingleRootStore
     @State private var shouldNavigateToNextScreen: Bool? = false
     var body: some View {
         Background.login {
             NavigatingTextEntry(
                 placeholder: "Enter Email Address",
-                destination: SignUpPhoneNumber(),
+                destination: SingleStoreSignUpPhoneNumber(),
                 text: $store.state.signUpState.email,
                 shouldNavigateToNextScreen: $shouldNavigateToNextScreen
             )
@@ -17,9 +17,9 @@ struct SignUpEmail: View {
     }
 }
 
-struct SignUpEmail_Previews: PreviewProvider {
+struct SingleStoreSignUpEmail_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpEmail()
-        .environmentObject(RootStore())
+        SingleStoreSignUpEmail()
+        .environmentObject(SingleRootStore())
     }
 }

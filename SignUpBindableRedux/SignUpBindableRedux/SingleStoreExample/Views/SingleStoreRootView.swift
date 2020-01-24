@@ -1,18 +1,18 @@
 import SwiftUI
 
-struct RootView: View {
-    @EnvironmentObject var store: RootStore
+struct SingleStoreRootView: View {
+    @EnvironmentObject var store: SingleRootStore
     var body: some View {
         ZStack {
             if store.state.isLoggedIn {
-                Home()
+                SingleStoreHome()
                     .transition(.scale)
             } else {
-                Login()
+                SingleStoreLogin()
                     .transition(.scale)
                     .sheet(isPresented: $store.state.loginState.showRegistrationFlow) {
                         NavigationView {
-                            SignUpFirstName()
+                            SingleStoreSignUpFirstName()
                         }
                         .environmentObject(self.store)
                     }
@@ -21,8 +21,9 @@ struct RootView: View {
     }
 }
 
-struct RootView_Previews: PreviewProvider {
+struct SingleStoreRootView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView()
+        SingleStoreRootView()
+        .environmentObject(SingleRootStore())
     }
 }

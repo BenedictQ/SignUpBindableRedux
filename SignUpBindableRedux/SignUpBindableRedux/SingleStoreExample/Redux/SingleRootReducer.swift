@@ -1,7 +1,7 @@
 import BindableSwiftUIRedux
 
-enum RootReducer: ReduxRootReducer {
-    static func reduce<Action: BindingUpdateAction>(_ action: Action, store: RootStore) {
+enum SingleStoreRootReducer: ReduxRootReducer {
+    static func reduce<Action: BindingUpdateAction>(_ action: Action, store: SingleRootStore) {
         switch action {
         case let action as SignUpUpdateFirstName:
             store.state.signUpState.$firstName = action.state
@@ -18,7 +18,7 @@ enum RootReducer: ReduxRootReducer {
         }
     }
 
-    static func reduce(_ action: ReduxAction, store: RootStore) {
+    static func reduce(_ action: ReduxAction, store: SingleRootStore) {
         switch action {
         case let action as UpdateIsLoggedIn:
             store.state.isLoggedIn = action.isLoggedIn

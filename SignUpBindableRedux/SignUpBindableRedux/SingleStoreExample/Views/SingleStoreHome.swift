@@ -2,8 +2,8 @@
 
 import SwiftUI
 
-struct Home: View {
-    @EnvironmentObject var store: RootStore
+struct SingleStoreHome: View {
+    @EnvironmentObject var store: SingleRootStore
     var body: some View {
         Background.generate(withColor: .blue) {
             ZStack {
@@ -38,9 +38,9 @@ struct Home: View {
     }
 }
 
-struct Home_Previews: PreviewProvider {
+struct SingleStoreHome_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
-        .environmentObject(RootStore())
+        SingleStoreHome()
+        .environmentObject(SingleRootStore())
     }
 }

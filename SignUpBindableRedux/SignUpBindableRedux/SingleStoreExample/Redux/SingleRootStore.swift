@@ -3,9 +3,9 @@
 import Combine
 import BindableSwiftUIRedux
 
-final class RootStore: ReduxStore {
-    typealias Reducer = RootReducer
-    var state = RootState()
+final class SingleRootStore: ReduxStore {
+    typealias Reducer = SingleStoreRootReducer
+    var state = SingleStoreRootState()
     var subscribers = Set<AnyCancellable>()
     var objectWillChange = ObservableObjectPublisher()
 }

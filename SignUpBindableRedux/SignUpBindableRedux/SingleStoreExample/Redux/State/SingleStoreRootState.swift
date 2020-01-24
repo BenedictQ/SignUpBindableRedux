@@ -1,12 +1,12 @@
 import BindableSwiftUIRedux
 import Combine
 
-final class RootState: ReduxState {
-    @Published var signUpState = SignUpState()
-    @Published var loginState = LoginState()
+final class SingleStoreRootState: ReduxState {
+    @Published var signUpState = SingleStoreSignUpState()
+    @Published var loginState = SingleStoreLoginState()
     @Published var isLoggedIn: Bool = false
 
-    func initialize(store: RootStore) {
+    func initialize(store: SingleRootStore) {
         signUpState.initialize(with: store)
 
         loginState.objectWillChange.receive(subscriber: Subscribers.Sink(receiveCompletion: { _ in }) {

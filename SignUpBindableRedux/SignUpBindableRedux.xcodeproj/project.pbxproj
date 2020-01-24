@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9D4A5ECC23D8A3DA006504AB /* BindableSwiftUIRedux in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4A5ECB23D8A3DA006504AB /* BindableSwiftUIRedux */; };
-		9D4A5ECE23D8AAE0006504AB /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */; };
-		9D4A5ED123D8AB8A006504AB /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED023D8AB8A006504AB /* RootState.swift */; };
-		9D4A5ED323D8AB92006504AB /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED223D8AB92006504AB /* SignUpState.swift */; };
-		9D4A5ED723D8AD72006504AB /* LabelledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED623D8AD72006504AB /* LabelledText.swift */; };
+		9D4A5ECE23D8AAE0006504AB /* SingleRootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ECD23D8AAE0006504AB /* SingleRootReducer.swift */; };
+		9D4A5ED123D8AB8A006504AB /* SingleStoreRootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED023D8AB8A006504AB /* SingleStoreRootState.swift */; };
+		9D4A5ED323D8AB92006504AB /* SingleStoreSignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED223D8AB92006504AB /* SingleStoreSignUpState.swift */; };
 		9D4A5EDA23D8B772006504AB /* UpdateIsLoggedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED923D8B772006504AB /* UpdateIsLoggedIn.swift */; };
-		9D4A5EDC23D8B902006504AB /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EDB23D8B902006504AB /* LoginState.swift */; };
+		9D4A5EDC23D8B902006504AB /* SingleStoreLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EDB23D8B902006504AB /* SingleStoreLoginState.swift */; };
 		9D4A5EDE23D8B984006504AB /* UpdateShowRegistrationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EDD23D8B984006504AB /* UpdateShowRegistrationFlow.swift */; };
 		9D4A5EE223D997D3006504AB /* SignUpUpdateFirstName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EE123D997D3006504AB /* SignUpUpdateFirstName.swift */; };
 		9D4A5EE523D999B7006504AB /* SignUpUpdateLastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EE423D999B7006504AB /* SignUpUpdateLastName.swift */; };
@@ -29,18 +28,19 @@
 		9D5130BD239AB9B900FEFA33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5130BB239AB9B900FEFA33 /* LaunchScreen.storyboard */; };
 		9D5130C8239AB9B900FEFA33 /* SignUpBindableReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130C7239AB9B900FEFA33 /* SignUpBindableReduxTests.swift */; };
 		9D5130D3239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130D2239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift */; };
-		9D5130EB239ABD4100FEFA33 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130EA239ABD4100FEFA33 /* Login.swift */; };
+		9D5130EB239ABD4100FEFA33 /* SingleStoreLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130EA239ABD4100FEFA33 /* SingleStoreLogin.swift */; };
 		9D5130F123A3997200FEFA33 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F023A3997200FEFA33 /* Logo.swift */; };
-		9D5130F423A3AA9000FEFA33 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F323A3AA9000FEFA33 /* Home.swift */; };
-		9D5130F623A3B64900FEFA33 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F523A3B64900FEFA33 /* RootView.swift */; };
-		9D5130FD23A3D85000FEFA33 /* SignUpFirstName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130FC23A3D85000FEFA33 /* SignUpFirstName.swift */; };
+		9D5130F423A3AA9000FEFA33 /* SingleStoreHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F323A3AA9000FEFA33 /* SingleStoreHome.swift */; };
+		9D5130F623A3B64900FEFA33 /* SingleStoreRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130F523A3B64900FEFA33 /* SingleStoreRootView.swift */; };
+		9D5130FD23A3D85000FEFA33 /* SingleStoreSignUpFirstName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130FC23A3D85000FEFA33 /* SingleStoreSignUpFirstName.swift */; };
 		9D5130FF23A3DAAA00FEFA33 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130FE23A3DAAA00FEFA33 /* Background.swift */; };
-		9D51310423A3DD2800FEFA33 /* RootStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310323A3DD2800FEFA33 /* RootStore.swift */; };
-		9D51310623A3DEDE00FEFA33 /* SignUpLastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310523A3DEDE00FEFA33 /* SignUpLastName.swift */; };
+		9D51310423A3DD2800FEFA33 /* SingleRootStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310323A3DD2800FEFA33 /* SingleRootStore.swift */; };
+		9D51310623A3DEDE00FEFA33 /* SingleStoreSignUpLastName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310523A3DEDE00FEFA33 /* SingleStoreSignUpLastName.swift */; };
 		9D51310823A3E3D800FEFA33 /* NavigatingTextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310723A3E3D800FEFA33 /* NavigatingTextEntry.swift */; };
-		9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310923A3E59600FEFA33 /* SignUpEmail.swift */; };
-		9D51310C23A3E6B200FEFA33 /* SignUpPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */; };
-		9D51310E23A3E6DB00FEFA33 /* SignUpPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */; };
+		9D51310A23A3E59600FEFA33 /* SingleStoreSignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310923A3E59600FEFA33 /* SingleStoreSignUpEmail.swift */; };
+		9D51310C23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310B23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift */; };
+		9D51310E23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310D23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift */; };
+		9DB9B7DC23DB09D800670555 /* LabelledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB9B7DB23DB09D800670555 /* LabelledText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
-		9D4A5ED023D8AB8A006504AB /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
-		9D4A5ED223D8AB92006504AB /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
-		9D4A5ED623D8AD72006504AB /* LabelledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledText.swift; sourceTree = "<group>"; };
+		9D4A5ECD23D8AAE0006504AB /* SingleRootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRootReducer.swift; sourceTree = "<group>"; };
+		9D4A5ED023D8AB8A006504AB /* SingleStoreRootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreRootState.swift; sourceTree = "<group>"; };
+		9D4A5ED223D8AB92006504AB /* SingleStoreSignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpState.swift; sourceTree = "<group>"; };
 		9D4A5ED923D8B772006504AB /* UpdateIsLoggedIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateIsLoggedIn.swift; sourceTree = "<group>"; };
-		9D4A5EDB23D8B902006504AB /* LoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		9D4A5EDB23D8B902006504AB /* SingleStoreLoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleStoreLoginState.swift; sourceTree = "<group>"; };
 		9D4A5EDD23D8B984006504AB /* UpdateShowRegistrationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateShowRegistrationFlow.swift; sourceTree = "<group>"; };
 		9D4A5EE123D997D3006504AB /* SignUpUpdateFirstName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdateFirstName.swift; sourceTree = "<group>"; };
 		9D4A5EE423D999B7006504AB /* SignUpUpdateLastName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUpdateLastName.swift; sourceTree = "<group>"; };
@@ -88,18 +87,19 @@
 		9D5130CE239AB9B900FEFA33 /* SignUpBindableReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignUpBindableReduxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D5130D2239AB9B900FEFA33 /* SignUpBindableReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBindableReduxUITests.swift; sourceTree = "<group>"; };
 		9D5130D4239AB9B900FEFA33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D5130EA239ABD4100FEFA33 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		9D5130EA239ABD4100FEFA33 /* SingleStoreLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreLogin.swift; sourceTree = "<group>"; };
 		9D5130F023A3997200FEFA33 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
-		9D5130F323A3AA9000FEFA33 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		9D5130F523A3B64900FEFA33 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		9D5130FC23A3D85000FEFA33 /* SignUpFirstName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFirstName.swift; sourceTree = "<group>"; };
+		9D5130F323A3AA9000FEFA33 /* SingleStoreHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreHome.swift; sourceTree = "<group>"; };
+		9D5130F523A3B64900FEFA33 /* SingleStoreRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreRootView.swift; sourceTree = "<group>"; };
+		9D5130FC23A3D85000FEFA33 /* SingleStoreSignUpFirstName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpFirstName.swift; sourceTree = "<group>"; };
 		9D5130FE23A3DAAA00FEFA33 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
-		9D51310323A3DD2800FEFA33 /* RootStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootStore.swift; sourceTree = "<group>"; };
-		9D51310523A3DEDE00FEFA33 /* SignUpLastName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpLastName.swift; sourceTree = "<group>"; };
+		9D51310323A3DD2800FEFA33 /* SingleRootStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRootStore.swift; sourceTree = "<group>"; };
+		9D51310523A3DEDE00FEFA33 /* SingleStoreSignUpLastName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpLastName.swift; sourceTree = "<group>"; };
 		9D51310723A3E3D800FEFA33 /* NavigatingTextEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatingTextEntry.swift; sourceTree = "<group>"; };
-		9D51310923A3E59600FEFA33 /* SignUpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmail.swift; sourceTree = "<group>"; };
-		9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPhoneNumber.swift; sourceTree = "<group>"; };
-		9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPIN.swift; sourceTree = "<group>"; };
+		9D51310923A3E59600FEFA33 /* SingleStoreSignUpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpEmail.swift; sourceTree = "<group>"; };
+		9D51310B23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpPhoneNumber.swift; sourceTree = "<group>"; };
+		9D51310D23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStoreSignUpPIN.swift; sourceTree = "<group>"; };
+		9DB9B7DB23DB09D800670555 /* LabelledText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelledText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +131,9 @@
 		9D4A5ECF23D8AB80006504AB /* State */ = {
 			isa = PBXGroup;
 			children = (
-				9D4A5ED023D8AB8A006504AB /* RootState.swift */,
-				9D4A5ED223D8AB92006504AB /* SignUpState.swift */,
-				9D4A5EDB23D8B902006504AB /* LoginState.swift */,
+				9D4A5ED023D8AB8A006504AB /* SingleStoreRootState.swift */,
+				9D4A5ED223D8AB92006504AB /* SingleStoreSignUpState.swift */,
+				9D4A5EDB23D8B902006504AB /* SingleStoreLoginState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -192,8 +192,8 @@
 		9D5130AC239AB9B700FEFA33 /* SignUpBindableRedux */ = {
 			isa = PBXGroup;
 			children = (
-				9D51310023A3DD0D00FEFA33 /* Redux */,
-				9D5130EC239ABD4900FEFA33 /* Views */,
+				9DCFB2BF23DB04C3009BF96A /* Shared */,
+				9DCFB28223DB0482009BF96A /* SingleStoreExample */,
 				9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */,
 				9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */,
 				9D5130B6239AB9B900FEFA33 /* Assets.xcassets */,
@@ -234,11 +234,9 @@
 		9D5130EC239ABD4900FEFA33 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9D5130F523A3B64900FEFA33 /* RootView.swift */,
-				9D5130F223A3AA8500FEFA33 /* Home */,
+				9D5130F523A3B64900FEFA33 /* SingleStoreRootView.swift */,
+				9D5130F323A3AA9000FEFA33 /* SingleStoreHome.swift */,
 				9D5130ED239ABF8700FEFA33 /* Login */,
-				9D5130F023A3997200FEFA33 /* Logo.swift */,
-				9D5130FE23A3DAAA00FEFA33 /* Background.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,29 +245,19 @@
 			isa = PBXGroup;
 			children = (
 				9D5130FB23A3D7B500FEFA33 /* Register */,
-				9D5130EA239ABD4100FEFA33 /* Login.swift */,
+				9D5130EA239ABD4100FEFA33 /* SingleStoreLogin.swift */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		9D5130F223A3AA8500FEFA33 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				9D5130F323A3AA9000FEFA33 /* Home.swift */,
-				9D4A5ED623D8AD72006504AB /* LabelledText.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		9D5130FB23A3D7B500FEFA33 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				9D51310723A3E3D800FEFA33 /* NavigatingTextEntry.swift */,
-				9D5130FC23A3D85000FEFA33 /* SignUpFirstName.swift */,
-				9D51310523A3DEDE00FEFA33 /* SignUpLastName.swift */,
-				9D51310923A3E59600FEFA33 /* SignUpEmail.swift */,
-				9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */,
-				9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */,
+				9D5130FC23A3D85000FEFA33 /* SingleStoreSignUpFirstName.swift */,
+				9D51310523A3DEDE00FEFA33 /* SingleStoreSignUpLastName.swift */,
+				9D51310923A3E59600FEFA33 /* SingleStoreSignUpEmail.swift */,
+				9D51310B23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift */,
+				9D51310D23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -277,12 +265,32 @@
 		9D51310023A3DD0D00FEFA33 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
-				9D4A5ED823D8B738006504AB /* Actions */,
 				9D4A5ECF23D8AB80006504AB /* State */,
-				9D51310323A3DD2800FEFA33 /* RootStore.swift */,
-				9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */,
+				9D51310323A3DD2800FEFA33 /* SingleRootStore.swift */,
+				9D4A5ECD23D8AAE0006504AB /* SingleRootReducer.swift */,
 			);
 			path = Redux;
+			sourceTree = "<group>";
+		};
+		9DCFB28223DB0482009BF96A /* SingleStoreExample */ = {
+			isa = PBXGroup;
+			children = (
+				9D51310023A3DD0D00FEFA33 /* Redux */,
+				9D5130EC239ABD4900FEFA33 /* Views */,
+			);
+			path = SingleStoreExample;
+			sourceTree = "<group>";
+		};
+		9DCFB2BF23DB04C3009BF96A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9DB9B7DB23DB09D800670555 /* LabelledText.swift */,
+				9D51310723A3E3D800FEFA33 /* NavigatingTextEntry.swift */,
+				9D5130F023A3997200FEFA33 /* Logo.swift */,
+				9D5130FE23A3DAAA00FEFA33 /* Background.swift */,
+				9D4A5ED823D8B738006504AB /* Actions */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,34 +430,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5130F623A3B64900FEFA33 /* RootView.swift in Sources */,
-				9D4A5ED323D8AB92006504AB /* SignUpState.swift in Sources */,
+				9D5130F623A3B64900FEFA33 /* SingleStoreRootView.swift in Sources */,
+				9D4A5ED323D8AB92006504AB /* SingleStoreSignUpState.swift in Sources */,
 				9D5130B3239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld in Sources */,
 				9D4A5EE523D999B7006504AB /* SignUpUpdateLastName.swift in Sources */,
-				9D5130EB239ABD4100FEFA33 /* Login.swift in Sources */,
-				9D51310E23A3E6DB00FEFA33 /* SignUpPIN.swift in Sources */,
+				9D5130EB239ABD4100FEFA33 /* SingleStoreLogin.swift in Sources */,
+				9D51310E23A3E6DB00FEFA33 /* SingleStoreSignUpPIN.swift in Sources */,
 				9D5130AE239AB9B700FEFA33 /* AppDelegate.swift in Sources */,
 				9D5130F123A3997200FEFA33 /* Logo.swift in Sources */,
-				9D4A5EDC23D8B902006504AB /* LoginState.swift in Sources */,
+				9D4A5EDC23D8B902006504AB /* SingleStoreLoginState.swift in Sources */,
 				9D4A5EDA23D8B772006504AB /* UpdateIsLoggedIn.swift in Sources */,
-				9D4A5ED723D8AD72006504AB /* LabelledText.swift in Sources */,
-				9D51310C23A3E6B200FEFA33 /* SignUpPhoneNumber.swift in Sources */,
-				9D4A5ED123D8AB8A006504AB /* RootState.swift in Sources */,
+				9D51310C23A3E6B200FEFA33 /* SingleStoreSignUpPhoneNumber.swift in Sources */,
+				9D4A5ED123D8AB8A006504AB /* SingleStoreRootState.swift in Sources */,
 				9D5130B0239AB9B700FEFA33 /* SceneDelegate.swift in Sources */,
 				9D4A5EE923D999E4006504AB /* SignUpUpdatePhoneNumber.swift in Sources */,
-				9D5130F423A3AA9000FEFA33 /* Home.swift in Sources */,
+				9D5130F423A3AA9000FEFA33 /* SingleStoreHome.swift in Sources */,
 				9D51310823A3E3D800FEFA33 /* NavigatingTextEntry.swift in Sources */,
-				9D4A5ECE23D8AAE0006504AB /* RootReducer.swift in Sources */,
-				9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */,
+				9D4A5ECE23D8AAE0006504AB /* SingleRootReducer.swift in Sources */,
+				9D51310A23A3E59600FEFA33 /* SingleStoreSignUpEmail.swift in Sources */,
 				9D4A5EE223D997D3006504AB /* SignUpUpdateFirstName.swift in Sources */,
 				9D4A5EEE23D9A19B006504AB /* UpdateRecordedPIN.swift in Sources */,
-				9D51310423A3DD2800FEFA33 /* RootStore.swift in Sources */,
+				9D51310423A3DD2800FEFA33 /* SingleRootStore.swift in Sources */,
 				9D4A5EEB23D99A01006504AB /* SignUpUpdatePIN.swift in Sources */,
 				9D5130FF23A3DAAA00FEFA33 /* Background.swift in Sources */,
 				9D4A5EE723D999C9006504AB /* SignUpUpdateEmail.swift in Sources */,
-				9D51310623A3DEDE00FEFA33 /* SignUpLastName.swift in Sources */,
+				9D51310623A3DEDE00FEFA33 /* SingleStoreSignUpLastName.swift in Sources */,
 				9D4A5EDE23D8B984006504AB /* UpdateShowRegistrationFlow.swift in Sources */,
-				9D5130FD23A3D85000FEFA33 /* SignUpFirstName.swift in Sources */,
+				9D5130FD23A3D85000FEFA33 /* SingleStoreSignUpFirstName.swift in Sources */,
+				9DB9B7DC23DB09D800670555 /* LabelledText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

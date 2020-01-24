@@ -3,8 +3,8 @@
 import SwiftUI
 import Combine
 
-struct Login: View {
-    @EnvironmentObject var store: RootStore
+struct SingleStoreLogin: View {
+    @EnvironmentObject var store: SingleRootStore
     @State private var pin = ""
     @State private var shouldDisplayErrorMessage = false
 
@@ -52,15 +52,15 @@ struct Login: View {
     }
 }
 
-struct Login_Previews: PreviewProvider {
+struct SingleStoreLogin_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Login()
+            SingleStoreLogin()
                 .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
-                .environmentObject(RootStore().initialize())
-            Login()
+                .environmentObject(SingleRootStore().initialize())
+            SingleStoreLogin()
                 .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
-                .environmentObject(RootStore().initialize())
+                .environmentObject(SingleRootStore().initialize())
         }
     }
 }

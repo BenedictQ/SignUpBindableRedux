@@ -2,8 +2,8 @@
 
 import SwiftUI
 
-struct SignUpPIN: View {
-    @EnvironmentObject var store: RootStore
+struct SingleStoreSignUpPIN: View {
+    @EnvironmentObject var store: SingleRootStore
     @State private var shouldNavigateToNextScreen: Bool? = false
     var body: some View {
         Background.login {
@@ -16,9 +16,9 @@ struct SignUpPIN: View {
     }
 }
 
-struct SignUpPIN_Previews: PreviewProvider {
+struct SingleStoreSignUpPIN_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpPIN()
-        .environmentObject(RootStore())
+        SingleStoreSignUpPIN()
+        .environmentObject(SingleRootStore())
     }
 }
