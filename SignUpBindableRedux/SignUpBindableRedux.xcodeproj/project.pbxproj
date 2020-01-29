@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D4A5ECC23D8A3DA006504AB /* BindableSwiftUIRedux in Frameworks */ = {isa = PBXBuildFile; productRef = 9D4A5ECB23D8A3DA006504AB /* BindableSwiftUIRedux */; };
 		9D4A5ECE23D8AAE0006504AB /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */; };
 		9D4A5ED123D8AB8A006504AB /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED023D8AB8A006504AB /* RootState.swift */; };
-		9D4A5ED323D8AB92006504AB /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED223D8AB92006504AB /* SignUpState.swift */; };
 		9D4A5ED723D8AD72006504AB /* LabelledText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED623D8AD72006504AB /* LabelledText.swift */; };
 		9D4A5EDA23D8B772006504AB /* UpdateIsLoggedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5ED923D8B772006504AB /* UpdateIsLoggedIn.swift */; };
 		9D4A5EDC23D8B902006504AB /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EDB23D8B902006504AB /* LoginState.swift */; };
@@ -41,6 +39,9 @@
 		9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310923A3E59600FEFA33 /* SignUpEmail.swift */; };
 		9D51310C23A3E6B200FEFA33 /* SignUpPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */; };
 		9D51310E23A3E6DB00FEFA33 /* SignUpPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */; };
+		9DE5A25F23E06E240089CD5A /* NewSignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5A25E23E06E240089CD5A /* NewSignUpState.swift */; };
+		9DE5A26123E079CD0089CD5A /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE5A26023E079CD0089CD5A /* SignUpState.swift */; };
+		9DE5A26723E18E890089CD5A /* BindableSwiftUIRedux in Frameworks */ = {isa = PBXBuildFile; productRef = 9DE5A26623E18E890089CD5A /* BindableSwiftUIRedux */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +64,6 @@
 /* Begin PBXFileReference section */
 		9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
 		9D4A5ED023D8AB8A006504AB /* RootState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
-		9D4A5ED223D8AB92006504AB /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
 		9D4A5ED623D8AD72006504AB /* LabelledText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledText.swift; sourceTree = "<group>"; };
 		9D4A5ED923D8B772006504AB /* UpdateIsLoggedIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateIsLoggedIn.swift; sourceTree = "<group>"; };
 		9D4A5EDB23D8B902006504AB /* LoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
@@ -100,6 +100,8 @@
 		9D51310923A3E59600FEFA33 /* SignUpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmail.swift; sourceTree = "<group>"; };
 		9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPhoneNumber.swift; sourceTree = "<group>"; };
 		9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPIN.swift; sourceTree = "<group>"; };
+		9DE5A25E23E06E240089CD5A /* NewSignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSignUpState.swift; sourceTree = "<group>"; };
+		9DE5A26023E079CD0089CD5A /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D4A5ECC23D8A3DA006504AB /* BindableSwiftUIRedux in Frameworks */,
+				9DE5A26723E18E890089CD5A /* BindableSwiftUIRedux in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				9D4A5ED023D8AB8A006504AB /* RootState.swift */,
-				9D4A5ED223D8AB92006504AB /* SignUpState.swift */,
 				9D4A5EDB23D8B902006504AB /* LoginState.swift */,
+				9DE5A25E23E06E240089CD5A /* NewSignUpState.swift */,
+				9DE5A26023E079CD0089CD5A /* SignUpState.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -302,7 +305,7 @@
 			);
 			name = SignUpBindableRedux;
 			packageProductDependencies = (
-				9D4A5ECB23D8A3DA006504AB /* BindableSwiftUIRedux */,
+				9DE5A26623E18E890089CD5A /* BindableSwiftUIRedux */,
 			);
 			productName = AddressBook;
 			productReference = 9D5130AA239AB9B700FEFA33 /* SignUpBindableRedux.app */;
@@ -377,7 +380,7 @@
 			);
 			mainGroup = 9D5130A1239AB9B700FEFA33;
 			packageReferences = (
-				9D4A5ECA23D8A3DA006504AB /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */,
+				9DE5A26523E18E890089CD5A /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */,
 			);
 			productRefGroup = 9D5130AB239AB9B700FEFA33 /* Products */;
 			projectDirPath = "";
@@ -422,8 +425,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE5A25F23E06E240089CD5A /* NewSignUpState.swift in Sources */,
 				9D5130F623A3B64900FEFA33 /* RootView.swift in Sources */,
-				9D4A5ED323D8AB92006504AB /* SignUpState.swift in Sources */,
 				9D5130B3239AB9B700FEFA33 /* SignUpBindableRedux.xcdatamodeld in Sources */,
 				9D4A5EE523D999B7006504AB /* SignUpUpdateLastName.swift in Sources */,
 				9D5130EB239ABD4100FEFA33 /* Login.swift in Sources */,
@@ -447,6 +450,7 @@
 				9D4A5EEB23D99A01006504AB /* SignUpUpdatePIN.swift in Sources */,
 				9D5130FF23A3DAAA00FEFA33 /* Background.swift in Sources */,
 				9D4A5EE723D999C9006504AB /* SignUpUpdateEmail.swift in Sources */,
+				9DE5A26123E079CD0089CD5A /* SignUpState.swift in Sources */,
 				9D51310623A3DEDE00FEFA33 /* SignUpLastName.swift in Sources */,
 				9D4A5EDE23D8B984006504AB /* UpdateShowRegistrationFlow.swift in Sources */,
 				9D5130FD23A3D85000FEFA33 /* SignUpFirstName.swift in Sources */,
@@ -775,20 +779,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9D4A5ECA23D8A3DA006504AB /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */ = {
+		9DE5A26523E18E890089CD5A /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/BenedictQ/Bindable-SwiftUI-Redux.git";
 			requirement = {
-				branch = master;
+				branch = "feature-favour-structs";
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9D4A5ECB23D8A3DA006504AB /* BindableSwiftUIRedux */ = {
+		9DE5A26623E18E890089CD5A /* BindableSwiftUIRedux */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9D4A5ECA23D8A3DA006504AB /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */;
+			package = 9DE5A26523E18E890089CD5A /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */;
 			productName = BindableSwiftUIRedux;
 		};
 /* End XCSwiftPackageProductDependency section */

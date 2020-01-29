@@ -2,7 +2,7 @@ import BindableSwiftUIRedux
 
 enum RootReducer: ReduxRootReducer {
     static func reduce<Action: BindingUpdateAction>(_ action: Action, state: RootState) -> RootState {
-        let newState = state.deepcopy()
+        var newState = state
         
         switch action {
         case let action as SignUpUpdateFirstName:
@@ -23,7 +23,7 @@ enum RootReducer: ReduxRootReducer {
     }
 
     static func reduce(_ action: ReduxAction, state: RootState) -> RootState {
-        let newState = state.deepcopy()
+        var newState = state
 
         switch action {
         case let action as UpdateIsLoggedIn:

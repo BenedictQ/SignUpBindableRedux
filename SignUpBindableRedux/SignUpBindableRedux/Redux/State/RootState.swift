@@ -2,20 +2,12 @@ import Foundation
 import BindableSwiftUIRedux
 import Combine
 
-final class RootState: ReduxState {
+struct RootState: ReduxState {
     var signUpState = SignUpState()
     var loginState = LoginState()
     var isLoggedIn: Bool = false
 
-    func initialize(store: RootStore) {
+    mutating func initialize(store: RootStore) {
         signUpState.initialize(store: store)
-    }
-
-    func deepcopy() -> RootState {
-        let state = RootState()
-        state.signUpState = signUpState
-        state.loginState = loginState
-        state.isLoggedIn = isLoggedIn
-        return state
     }
 }
