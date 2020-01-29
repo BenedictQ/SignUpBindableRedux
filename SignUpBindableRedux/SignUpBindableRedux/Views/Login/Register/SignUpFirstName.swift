@@ -20,6 +20,6 @@ struct SignUpFirstName: View {
 struct SignUpFirstName_Previews: PreviewProvider {
     static var previews: some View {
         SignUpFirstName()
-        .environmentObject(SignUpState())
+        .environmentObject(RootStore())
     }
 }
