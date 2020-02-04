@@ -1,9 +1,8 @@
 import BindableSwiftUIRedux
 
-enum LoggingMiddleware {
-    typealias Dispatch = RootStore.Dispatch
-    typealias DispatchWrapper = RootStore.DispatchWrapper
-    static var middleware: RootStore.Middleware {
+enum LoggingMiddleware: Middleware {
+    typealias Store = RootStore
+    static var middleware: Store.Middleware {
         return { (dispatch: Dispatch, getState: @escaping () -> RootState) in
             return { (next: @escaping Dispatch) in
                 return { (action: ReduxAction) in
