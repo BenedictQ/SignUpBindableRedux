@@ -20,7 +20,6 @@
 		9D4A5EE923D999E4006504AB /* SignUpUpdatePhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EE823D999E4006504AB /* SignUpUpdatePhoneNumber.swift */; };
 		9D4A5EEB23D99A01006504AB /* SignUpUpdatePIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EEA23D99A01006504AB /* SignUpUpdatePIN.swift */; };
 		9D4A5EEE23D9A19B006504AB /* UpdateRecordedPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A5EED23D9A19B006504AB /* UpdateRecordedPIN.swift */; };
-		9D5098F423E977BE0094DC90 /* BindableSwiftUIRedux in Frameworks */ = {isa = PBXBuildFile; productRef = 9D5098F323E977BE0094DC90 /* BindableSwiftUIRedux */; };
 		9D5098F723E98E2C0094DC90 /* LoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5098F623E98E2C0094DC90 /* LoggingMiddleware.swift */; };
 		9D5130AE239AB9B700FEFA33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130AD239AB9B700FEFA33 /* AppDelegate.swift */; };
 		9D5130B0239AB9B700FEFA33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5130AF239AB9B700FEFA33 /* SceneDelegate.swift */; };
@@ -42,6 +41,7 @@
 		9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310923A3E59600FEFA33 /* SignUpEmail.swift */; };
 		9D51310C23A3E6B200FEFA33 /* SignUpPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */; };
 		9D51310E23A3E6DB00FEFA33 /* SignUpPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */; };
+		9DDD91E723E9DB0900D27B5B /* BindableSwiftUIRedux in Frameworks */ = {isa = PBXBuildFile; productRef = 9DDD91E623E9DB0900D27B5B /* BindableSwiftUIRedux */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5098F423E977BE0094DC90 /* BindableSwiftUIRedux in Frameworks */,
+				9DDD91E723E9DB0900D27B5B /* BindableSwiftUIRedux in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +313,7 @@
 			);
 			name = SignUpBindableRedux;
 			packageProductDependencies = (
-				9D5098F323E977BE0094DC90 /* BindableSwiftUIRedux */,
+				9DDD91E623E9DB0900D27B5B /* BindableSwiftUIRedux */,
 			);
 			productName = AddressBook;
 			productReference = 9D5130AA239AB9B700FEFA33 /* SignUpBindableRedux.app */;
@@ -388,7 +388,7 @@
 			);
 			mainGroup = 9D5130A1239AB9B700FEFA33;
 			packageReferences = (
-				9D5098F223E977BE0094DC90 /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */,
+				9DDD91E523E9DB0900D27B5B /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */,
 			);
 			productRefGroup = 9D5130AB239AB9B700FEFA33 /* Products */;
 			projectDirPath = "";
@@ -787,20 +787,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9D5098F223E977BE0094DC90 /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */ = {
+		9DDD91E523E9DB0900D27B5B /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/BenedictQ/Bindable-SwiftUI-Redux.git";
 			requirement = {
-				branch = "feature-middleware-for-real";
+				branch = master;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9D5098F323E977BE0094DC90 /* BindableSwiftUIRedux */ = {
+		9DDD91E623E9DB0900D27B5B /* BindableSwiftUIRedux */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9D5098F223E977BE0094DC90 /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */;
+			package = 9DDD91E523E9DB0900D27B5B /* XCRemoteSwiftPackageReference "Bindable-SwiftUI-Redux" */;
 			productName = BindableSwiftUIRedux;
 		};
 /* End XCSwiftPackageProductDependency section */

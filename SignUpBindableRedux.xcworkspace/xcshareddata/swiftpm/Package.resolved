@@ -5,8 +5,8 @@
         "package": "BindableSwiftUIRedux",
         "repositoryURL": "https://github.com/BenedictQ/Bindable-SwiftUI-Redux.git",
         "state": {
-          "branch": "feature-middleware-for-real",
-          "revision": "29ffced1b5f761d0d5fb1b96618c907adb821cca",
+          "branch": "master",
+          "revision": "f6e8e153909217a687526d57ac09b77f2a8efc58",
           "version": null
         }
       }
