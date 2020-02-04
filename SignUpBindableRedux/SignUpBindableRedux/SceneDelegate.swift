@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import BindableSwiftUIRedux
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -24,9 +25,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
+        let rootStore = RootStore.createStore(
+            reducer: RootReducer.self,
+            preloadedState: nil,
+            enhancer: RootStore.applyMiddleware(middlewares: [
+                LoggingMiddleware.middleware,
+                ThunkMiddleware<RootStore>.middleware
+            ])
+        )
+        .initialize()
         let contentView = RootView()
             .environment(\.managedObjectContext, context)
-            .environmentObject(RootStore().initialize())
+            .environmentObject(rootStore)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

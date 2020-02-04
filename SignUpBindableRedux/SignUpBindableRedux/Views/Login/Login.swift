@@ -2,6 +2,7 @@
 
 import SwiftUI
 import Combine
+import BindableSwiftUIRedux
 
 struct Login: View {
     @EnvironmentObject var store: RootStore
@@ -14,8 +15,12 @@ struct Login: View {
                 SecureField("Enter PIN", text: self.$pin) {
                     if self.store.state.loginState.recordedPIN != "" && self.pin == self.store.state.loginState.recordedPIN {
                         withAnimation(.linear) {
-                            let update = UpdateIsLoggedIn(isLoggedIn: true)
-                            self.store.dispatch(update)
+                            let thunk = Thunk<RootStore> { dispatch, _ in
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                    dispatch(UpdateIsLoggedIn(isLoggedIn: true))
+                                }
+                            }
+                            self.store.dispatch(thunk)
                         }
                     } else {
                         self.shouldDisplayErrorMessage = true

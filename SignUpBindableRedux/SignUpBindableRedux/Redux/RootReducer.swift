@@ -1,27 +1,6 @@
 import BindableSwiftUIRedux
 
 enum RootReducer: ReduxRootReducer {
-    static func reduce<Action: BindingUpdateAction>(_ action: Action, state: RootState) -> RootState {
-        let newState = state.deepcopy()
-        
-        switch action {
-        case let action as SignUpUpdateFirstName:
-            newState.signUpState.$firstName = action.state
-        case let action as SignUpUpdateLastName:
-            newState.signUpState.$lastName = action.state
-        case let action as SignUpUpdateEmail:
-            newState.signUpState.$email = action.state
-        case let action as SignUpUpdatePhoneNumber:
-            newState.signUpState.$phone = action.state
-        case let action as SignUpUpdatePIN:
-            newState.signUpState.$pin = action.state
-        default:
-            break
-        }
-
-        return newState
-    }
-
     static func reduce(_ action: ReduxAction, state: RootState) -> RootState {
         let newState = state.deepcopy()
 
@@ -32,6 +11,16 @@ enum RootReducer: ReduxRootReducer {
             newState.loginState.showRegistrationFlow = action.shouldShowRegistrationFlow
         case let action as UpdateRecordedPIN:
             newState.loginState.recordedPIN = action.pin
+        case let action as SignUpUpdateFirstName:
+            newState.signUpState.$firstName = action.state
+        case let action as SignUpUpdateLastName:
+            newState.signUpState.$lastName = action.state
+        case let action as SignUpUpdateEmail:
+            newState.signUpState.$email = action.state
+        case let action as SignUpUpdatePhoneNumber:
+            newState.signUpState.$phone = action.state
+        case let action as SignUpUpdatePIN:
+            newState.signUpState.$pin = action.state
         default:
             break
         }
