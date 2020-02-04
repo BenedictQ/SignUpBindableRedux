@@ -29,7 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             reducer: RootReducer.self,
             preloadedState: nil,
             enhancer: RootStore.applyMiddleware(middlewares: [
-                LoggingMiddleware.middleware
+                LoggingMiddleware.middleware,
+                ThunkMiddleware<RootStore>.middleware
             ])
         )
         .initialize()

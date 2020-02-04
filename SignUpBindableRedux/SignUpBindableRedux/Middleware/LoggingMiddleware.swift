@@ -8,10 +8,9 @@ enum LoggingMiddleware: Middleware {
                 return { (action: ReduxAction) in
                     print("Logging state")
                     print(getState())
-                    let action = next(action)
+                    next(action)
                     print(getState())
                     print("End logging state")
-                    return action
                 }
             }
         }
