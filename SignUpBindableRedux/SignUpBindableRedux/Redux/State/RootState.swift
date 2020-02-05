@@ -2,7 +2,7 @@ import Foundation
 import BindableSwiftUIRedux
 import Combine
 
-final class RootState: ReduxState {
+final class RootState: ReduxRootState {
     var signUpState = SignUpState()
     var loginState = LoginState()
     var isLoggedIn: Bool = false
