@@ -42,6 +42,8 @@
 		9D51310C23A3E6B200FEFA33 /* SignUpPhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */; };
 		9D51310E23A3E6DB00FEFA33 /* SignUpPIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */; };
 		9DD3B42423EB1A280092B872 /* SwiftUIBindableRedux in Frameworks */ = {isa = PBXBuildFile; productRef = 9DD3B42323EB1A280092B872 /* SwiftUIBindableRedux */; };
+		9DD3B42A23EB1C1B0092B872 /* SignUpReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3B42923EB1C1B0092B872 /* SignUpReducer.swift */; };
+		9DD3B42C23EB1CE20092B872 /* LoginReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD3B42B23EB1CE20092B872 /* LoginReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		9D51310923A3E59600FEFA33 /* SignUpEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpEmail.swift; sourceTree = "<group>"; };
 		9D51310B23A3E6B200FEFA33 /* SignUpPhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPhoneNumber.swift; sourceTree = "<group>"; };
 		9D51310D23A3E6DB00FEFA33 /* SignUpPIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPIN.swift; sourceTree = "<group>"; };
+		9DD3B42923EB1C1B0092B872 /* SignUpReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpReducer.swift; sourceTree = "<group>"; };
+		9DD3B42B23EB1CE20092B872 /* LoginReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,12 +292,22 @@
 		9D51310023A3DD0D00FEFA33 /* Redux */ = {
 			isa = PBXGroup;
 			children = (
+				9DD3B42823EB1C0A0092B872 /* Reducers */,
 				9D4A5ED823D8B738006504AB /* Actions */,
 				9D4A5ECF23D8AB80006504AB /* State */,
 				9D51310323A3DD2800FEFA33 /* RootStore.swift */,
-				9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */,
 			);
 			path = Redux;
+			sourceTree = "<group>";
+		};
+		9DD3B42823EB1C0A0092B872 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				9D4A5ECD23D8AAE0006504AB /* RootReducer.swift */,
+				9DD3B42923EB1C1B0092B872 /* SignUpReducer.swift */,
+				9DD3B42B23EB1CE20092B872 /* LoginReducer.swift */,
+			);
+			path = Reducers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +460,7 @@
 				9D4A5EDA23D8B772006504AB /* UpdateIsLoggedIn.swift in Sources */,
 				9D4A5ED723D8AD72006504AB /* LabelledText.swift in Sources */,
 				9D51310C23A3E6B200FEFA33 /* SignUpPhoneNumber.swift in Sources */,
+				9DD3B42C23EB1CE20092B872 /* LoginReducer.swift in Sources */,
 				9D4A5ED123D8AB8A006504AB /* RootState.swift in Sources */,
 				9D5130B0239AB9B700FEFA33 /* SceneDelegate.swift in Sources */,
 				9D4A5EE923D999E4006504AB /* SignUpUpdatePhoneNumber.swift in Sources */,
@@ -453,6 +468,7 @@
 				9D51310823A3E3D800FEFA33 /* NavigatingTextEntry.swift in Sources */,
 				9D4A5ECE23D8AAE0006504AB /* RootReducer.swift in Sources */,
 				9D51310A23A3E59600FEFA33 /* SignUpEmail.swift in Sources */,
+				9DD3B42A23EB1C1B0092B872 /* SignUpReducer.swift in Sources */,
 				9D4A5EE223D997D3006504AB /* SignUpUpdateFirstName.swift in Sources */,
 				9D4A5EEE23D9A19B006504AB /* UpdateRecordedPIN.swift in Sources */,
 				9D51310423A3DD2800FEFA33 /* RootStore.swift in Sources */,

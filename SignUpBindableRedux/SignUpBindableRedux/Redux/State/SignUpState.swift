@@ -26,4 +26,15 @@ final class SignUpState: ReduxState {
             store.dispatch(update)
         }
     }
+
+    func deepcopy() -> SignUpState {
+        let newState = SignUpState()
+        newState._firstName = _firstName
+        newState._lastName = _lastName
+        newState._email = _email
+        newState._phone = _phone
+        newState._pin = _pin
+        newState.signUpStateSinkToRecordedPIN = signUpStateSinkToRecordedPIN
+        return newState
+    }
 }
