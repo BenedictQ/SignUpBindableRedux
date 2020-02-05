@@ -2,7 +2,7 @@
 
 import SwiftUI
 import Combine
-import BindableSwiftUIRedux
+import SwiftUIBindableRedux
 
 struct Login: View {
     @EnvironmentObject var store: RootStore

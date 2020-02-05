@@ -1,4 +1,4 @@
-import BindableSwiftUIRedux
+import SwiftUIBindableRedux
 
 enum RootReducer: ReduxRootReducer {
     static func reduce(_ action: ReduxAction, state: RootState) -> RootState {

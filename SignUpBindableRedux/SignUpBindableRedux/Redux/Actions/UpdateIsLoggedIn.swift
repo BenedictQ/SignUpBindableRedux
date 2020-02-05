@@ -1,4 +1,4 @@
-import BindableSwiftUIRedux
+import SwiftUIBindableRedux
 
 struct UpdateIsLoggedIn: ReduxAction {
     var isLoggedIn: Bool

@@ -1,7 +1,7 @@
 //
 
 import Combine
-import BindableSwiftUIRedux
+import SwiftUIBindableRedux
 
 final class RootStore: ReduxStore {
     typealias Reducer = RootReducer

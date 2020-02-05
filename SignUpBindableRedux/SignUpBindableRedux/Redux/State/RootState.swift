@@ -1,5 +1,5 @@
 import Foundation
-import BindableSwiftUIRedux
+import SwiftUIBindableRedux
 import Combine
 
 final class RootState: ReduxRootState {

@@ -8,7 +8,7 @@
 
 import UIKit
 import SwiftUI
-import BindableSwiftUIRedux
+import SwiftUIBindableRedux
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

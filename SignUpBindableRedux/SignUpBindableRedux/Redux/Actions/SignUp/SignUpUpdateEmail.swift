@@ -1,4 +1,4 @@
-import BindableSwiftUIRedux
+import SwiftUIBindableRedux
 
 struct SignUpUpdateEmail: BindingUpdateAction {
     let state: String
